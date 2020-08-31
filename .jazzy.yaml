@@ -1,0 +1,7 @@
+# Fastlee document generator jazzy settings
+
+copyright: Copyright 2020 Mobilee
+author: Łukasz Szarkowicz
+xcodebuild_arguments: [-target, Fastlee-iOS]
+clean: true
+output: ./Documentation
