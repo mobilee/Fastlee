@@ -2,6 +2,6 @@
 
 copyright: Copyright 2020 Mobilee
 author: Łukasz Szarkowicz
-xcodebuild_arguments: [-target, Fastlee-iOS]
+xcodebuild_arguments: [-target, Fastlee]
 clean: true
 output: ./Documentation
