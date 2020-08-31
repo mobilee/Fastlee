@@ -69,7 +69,7 @@ public extension CALayer {
         gradient.cornerRadius = cornerRadius
         gradient.startPoint = direction.startPoint
         gradient.endPoint = direction.endPoint
-        if let sl = sublayers, sl.count > 0, sl[0] is CAGradientLayer {
+        if let sl = sublayers, sl.isEmpty == false, sl[0] is CAGradientLayer {
             let lay = sl[0]
             replaceSublayer(lay, with: gradient)
         } else {
@@ -83,7 +83,7 @@ public extension CALayer {
      - Author: Mobilee - Łukasz Szarkowicz
      */
     func layoutGradient() {
-        if let sl = sublayers, sl.count > 0, sl[0] is CAGradientLayer {
+        if let sl = sublayers, sl.isEmpty == false, sl[0] is CAGradientLayer {
             let gradient = sl[0]
             gradient.frame = self.bounds
         }
