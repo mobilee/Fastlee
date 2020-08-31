@@ -53,6 +53,15 @@
 /* Begin PBXFileReference section */
 		37E7E1EF24FD777C00FAFF0B /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		37E7E1F624FD78AC00FAFF0B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		37E7E1F824FD78AC00FAFF0B /* PresentingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingCoordinator.swift; sourceTree = "<group>"; };
+		37E7E1FA24FD78AC00FAFF0B /* Dismissable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
+		37E7E1FB24FD78AC00FAFF0B /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		37E7E1FC24FD78AC00FAFF0B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		37E7E1FD24FD78AC00FAFF0B /* Coordinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinable.swift; sourceTree = "<group>"; };
+		37E7E1FE24FD78AC00FAFF0B /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		37E7E1FF24FD78AC00FAFF0B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* Fastlee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fastlee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* Fastlee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fastlee.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* FastleeTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FastleeTests.plist; sourceTree = "<group>"; };
@@ -116,6 +125,30 @@
 			path = Loadable;
 			sourceTree = "<group>";
 		};
+		37E7E1F524FD78AC00FAFF0B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E1F924FD78AC00FAFF0B /* Protocols */,
+				37E7E1F624FD78AC00FAFF0B /* AppCoordinator.swift */,
+				37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */,
+				37E7E1F824FD78AC00FAFF0B /* PresentingCoordinator.swift */,
+				37E7E1FE24FD78AC00FAFF0B /* NavigationCoordinator.swift */,
+				37E7E1FF24FD78AC00FAFF0B /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		37E7E1F924FD78AC00FAFF0B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E1FA24FD78AC00FAFF0B /* Dismissable.swift */,
+				37E7E1FB24FD78AC00FAFF0B /* Presentable.swift */,
+				37E7E1FC24FD78AC00FAFF0B /* Router.swift */,
+				37E7E1FD24FD78AC00FAFF0B /* Coordinable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		3D9C428622745894000A6585 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				37E7E1F124FD77ED00FAFF0B /* Loadable */,
+				37E7E1F524FD78AC00FAFF0B /* Coordinator */,
 				3D9C42A122745900000A6585 /* Fastlee.swift */,
 			);
 			path = Sources;
