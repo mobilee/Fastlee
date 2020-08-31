@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37E7E1F024FD777D00FAFF0B /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 37E7E1EF24FD777C00FAFF0B /* Gemfile */; };
 		37E7E21724FD79FA00FAFF0B /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E20224FD79D400FAFF0B /* UIImage+Resize.swift */; };
 		37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */; };
 		37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1FA24FD78AC00FAFF0B /* Dismissable.swift */; };
@@ -471,7 +470,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E7E1F024FD777D00FAFF0B /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

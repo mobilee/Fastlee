@@ -56,7 +56,7 @@ public extension UIImage {
         let useRatio = widthRatio < heightRatio ? widthRatio : heightRatio
         
         // Create cropping size
-        var newSize = CGSize(width: size.width * useRatio, height: size.height * useRatio)
+        let newSize = CGSize(width: size.width * useRatio, height: size.height * useRatio)
         
         // Create rect with new size
         let rect = CGRect(origin: CGPoint.zero, size: newSize)
