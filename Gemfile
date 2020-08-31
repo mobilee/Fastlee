@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "fastlane", '2.156.0'
+gem "fastlane"
 gem "jazzy"
 gem "cocoapods"
