@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="Fastlee Logo">
+   <img src="Logo.png" width="600" max-width="90%" alt="Fastlee Logo">
 </p>
 
 <p align="center">
@@ -22,13 +22,15 @@
 
 # Fastlee
 
-<p align="center">
-ℹ️ Short description of Fastlee
-</p>
+📦 Set of extensions and tools for easy and fast iOS development.
+
+⏰ Time is precious, use it wisely.
 
 ## Features
 
-- [x] ℹ️ Add Fastlee features
+- ⤴️ Coordinator -- navigation coordinator with SOLID principle
+- 🖼 Loadable -- initialise from Storyboard and XIB with ease
+- 🎯 Logger -- print messages on console with context info
 
 ## Example
 
@@ -77,7 +79,7 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 
 ## Usage
 
-ℹ️ Describe the usage of your Kit
+[+] Todo: create documentation with all available tools.
 
 ## Contributing
 Contributions are very welcome 🙌
