@@ -45,4 +45,3 @@ public extension Bundle {
         return main.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String
     }
 }
-

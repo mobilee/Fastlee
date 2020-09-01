@@ -19,7 +19,7 @@ extension Coordinator: Dismissable {
     
     public func dismiss(animated: Bool, completion: (() -> Void)? = nil) {
         
-        /// Safe guard -- dismiss should happend just in case presentedViewController or presentingViewController exists.
+        // Safe guard -- dismiss should happend just in case presentedViewController or presentingViewController exists.
         
         if presentableViewController().presentedViewController != nil {
             // It's case when any VC is presented in current context.

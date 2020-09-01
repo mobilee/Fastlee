@@ -20,7 +20,6 @@ public extension String {
     }
 }
 
-
 extension URL: ExpressibleByStringLiteral {
     public init(stringLiteral value: String) {
         guard let url = URL(string: value) else {

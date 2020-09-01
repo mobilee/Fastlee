@@ -28,6 +28,7 @@
 		37E7E22B24FD7B2D00FAFF0B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E21124FD79D400FAFF0B /* Comparable+Clamped.swift */; };
 		37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E21324FD79D400FAFF0B /* String+URL.swift */; };
 		37E7E22E24FD7B4200FAFF0B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E21624FD79D400FAFF0B /* Gradient.swift */; };
+		37E7E23524FDA31600FAFF0B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E23424FDA2BF00FAFF0B /* Logger.swift */; };
 		3D9C42A222745900000A6585 /* Fastlee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* Fastlee.swift */; };
 		3D9C42F62274604A000A6585 /* Fastlee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Fastlee.framework */; };
 		3D9C42FC22746078000A6585 /* FastleeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* FastleeTests.swift */; };
@@ -93,6 +94,7 @@
 		37E7E21124FD79D400FAFF0B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		37E7E21324FD79D400FAFF0B /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		37E7E21624FD79D400FAFF0B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		37E7E23424FDA2BF00FAFF0B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* Fastlee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fastlee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* Fastlee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fastlee.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* FastleeTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FastleeTests.plist; sourceTree = "<group>"; };
@@ -270,6 +272,14 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		37E7E23324FDA23700FAFF0B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E23424FDA2BF00FAFF0B /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3D9C428622745894000A6585 = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +330,7 @@
 				37E7E1F124FD77ED00FAFF0B /* Loadable */,
 				37E7E1F524FD78AC00FAFF0B /* Coordinator */,
 				37E7E20024FD79D400FAFF0B /* Extensions */,
+				37E7E23324FDA23700FAFF0B /* Utils */,
 				3D9C42A122745900000A6585 /* Fastlee.swift */,
 			);
 			path = Sources;
@@ -526,6 +537,7 @@
 				37E7E21F24FD7A2300FAFF0B /* PresentingCoordinator.swift in Sources */,
 				3D9C42A222745900000A6585 /* Fastlee.swift in Sources */,
 				37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */,
+				37E7E23524FDA31600FAFF0B /* Logger.swift in Sources */,
 				37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */,
 				37E7E22324FD7AF900FAFF0B /* UILabel+Truncated.swift in Sources */,
 				37E7E22624FD7B1600FAFF0B /* UIView+Add.swift in Sources */,
