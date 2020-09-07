@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Fastlee
 
 // MARK: - AppDelegate
 
@@ -16,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// The UIWindow
     var window: UIWindow?
-
+    var appCoordinator: MainCoordinator!
+    
     /// The RootViewController
     var rootViewController: UIViewController {
         return ViewController()
@@ -32,10 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Initialize UIWindow
         self.window = .init(frame: UIScreen.main.bounds)
-        // Set RootViewController
-        self.window?.rootViewController = self.rootViewController
-        // Make Key and Visible
-        self.window?.makeKeyAndVisible()
+        
+        appCoordinator = .init(window: window!)
         // Return positive launch
         return true
     }

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     lazy var label: UILabel = {
         let label = UILabel()
         label.text = "🚀\nFastlee\nExample"
-        label.font = .systemFont(ofSize: 25, weight: .semibold)
+        label.font = .systemFont(ofSize: 25, weight: .bold)
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.textAlignment = .center
@@ -39,5 +39,4 @@ class ViewController: UIViewController {
     override func loadView() {
         self.view = self.label
     }
-
 }

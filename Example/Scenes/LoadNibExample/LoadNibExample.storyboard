@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhk-kk-VG8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Load Nib Example View Controller-->
+        <scene sceneID="Mrb-p2-n7b">
+            <objects>
+                <viewController id="vhk-kk-VG8" customClass="LoadNibExampleViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffD-qF-ZkH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1Z-7U-1xM" customClass="PersonView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="dJI-BL-KAk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Doz-9g-x8P" customClass="Person2View" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="20" y="184" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="cYa-kh-E36"/>
+                                    <constraint firstAttribute="height" constant="70" id="dDS-cN-pUY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-sG-YNo">
+                                <rect key="frame" x="20" y="304" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="558-Hx-5nx"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Vi0-Mt-frw"/>
+                                    <constraint firstAttribute="height" constant="70" id="opc-fi-6eO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Doz-9g-x8P" firstAttribute="leading" secondItem="Luo-Zf-fH4" secondAttribute="leading" constant="20" id="24e-JJ-2a9"/>
+                            <constraint firstItem="Luo-Zf-fH4" firstAttribute="trailing" secondItem="YaH-sG-YNo" secondAttribute="trailing" constant="20" id="6bj-Ye-2cn"/>
+                            <constraint firstItem="N1Z-7U-1xM" firstAttribute="leading" secondItem="Luo-Zf-fH4" secondAttribute="leading" constant="20" id="CdU-Gg-1VB"/>
+                            <constraint firstItem="Luo-Zf-fH4" firstAttribute="trailing" secondItem="Doz-9g-x8P" secondAttribute="trailing" constant="20" id="dWl-Sn-Aqf"/>
+                            <constraint firstItem="YaH-sG-YNo" firstAttribute="leading" secondItem="Luo-Zf-fH4" secondAttribute="leading" constant="20" id="h2x-Ov-B6f"/>
+                            <constraint firstItem="N1Z-7U-1xM" firstAttribute="top" secondItem="Luo-Zf-fH4" secondAttribute="top" constant="20" id="hxH-w1-3xE"/>
+                            <constraint firstItem="YaH-sG-YNo" firstAttribute="top" secondItem="Doz-9g-x8P" secondAttribute="bottom" constant="50" id="u7F-gh-s3l"/>
+                            <constraint firstItem="Luo-Zf-fH4" firstAttribute="trailing" secondItem="N1Z-7U-1xM" secondAttribute="trailing" constant="20" id="xV4-GC-IRO"/>
+                            <constraint firstItem="Doz-9g-x8P" firstAttribute="top" secondItem="N1Z-7U-1xM" secondAttribute="bottom" constant="50" id="zZo-FA-F5L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Luo-Zf-fH4"/>
+                    </view>
+                    <connections>
+                        <outlet property="emptyView" destination="YaH-sG-YNo" id="Vzn-hU-oq6"/>
+                        <outlet property="personFromStoryboard" destination="N1Z-7U-1xM" id="dPR-hb-Anc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggj-TR-bHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="161"/>
+        </scene>
+    </scenes>
+</document>

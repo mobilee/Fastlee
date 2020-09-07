@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate class Logger {
+private class Logger {
 
     enum LogLevel {
         case error
