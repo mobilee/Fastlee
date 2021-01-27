@@ -36,8 +36,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = .init(frame: UIScreen.main.bounds)
         
         appCoordinator = .init(window: window!)
+        
+        configureRateApp()
+        
+        RateApp.askIfNeeded()
         // Return positive launch
         return true
     }
+    
+    func configureRateApp() {
+        
+        RateApp.configure(with: self)
+    }
 
+}
+
+extension AppDelegate: RateAppDelegate {
+
+    var configuration: RateAppConfiguration {
+        return RateAppConf()
+    }
+    
+    func rateAppShouldPresentRatePopup(_ rateApp: RateApp) -> RateApp.Trigger {
+        return RateApp.Trigger.custom { () -> Bool in
+            return true
+        }
+    }
+    
+    func rateAppDidSelectResign(_ rateApp: RateApp) {
+        return
+    }
+    
+    func rateAppDidSelectLater(_ rateApp: RateApp) {
+        return
+    }
+}
+
+struct RateAppConf: RateAppConfiguration {
+    var link: String = "http://"
+    var alertTitle: String = "Nice app"
+    var alertText: String = "Do you like this application?"
+    var alertConfirmButtonName: String = "Yes"
+    var alertDenyButtonName: String = "No"
+    var alertSkipName: String = "Skip"
 }

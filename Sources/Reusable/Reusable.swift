@@ -38,7 +38,7 @@ internal extension Reusable {
         }
     }
     
-    internal static var viewType: ViewTypeInitialization {
+    static var viewType: ViewTypeInitialization {
         if let nib = nib {
             return .nib(nibObject: nib)
         } else if Self.self is DesignedInStoryboard.Type {

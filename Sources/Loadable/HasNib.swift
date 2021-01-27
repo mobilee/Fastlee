@@ -11,7 +11,7 @@ import UIKit
 /**
  Describes Nib object for UIView subclass.
  
- Used for NibLoadable or Reusable
+ Used for NibLoadable
 */
 public protocol HasNib: UIView {
     /**
