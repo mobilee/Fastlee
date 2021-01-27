@@ -45,7 +45,7 @@ public class RateApp {
     }
     
     private func ask() {
-        guard let delegate = delegate else {
+        guard delegate != nil else {
             logError(message: "RateApp: Could not find settings for module. Provide it using 'public static func configure(with delegate: RateAppDelegate)'")
             return
         }
