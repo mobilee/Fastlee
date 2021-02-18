@@ -47,6 +47,7 @@
 		378D67032506E877005ABE66 /* Applyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66FF25069E20005ABE66 /* Applyer.swift */; };
 		378D67082506E98D005ABE66 /* ApplyExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D67072506E98D005ABE66 /* ApplyExampleViewController.swift */; };
 		378D670A2506E996005ABE66 /* ApplyExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D67092506E996005ABE66 /* ApplyExample.storyboard */; };
+		37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */; };
 		37E7E21724FD79FA00FAFF0B /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E20224FD79D400FAFF0B /* UIImage+Resize.swift */; };
 		37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */; };
 		37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1FA24FD78AC00FAFF0B /* Dismissable.swift */; };
@@ -159,6 +160,7 @@
 		378D67072506E98D005ABE66 /* ApplyExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyExampleViewController.swift; sourceTree = "<group>"; };
 		378D67092506E996005ABE66 /* ApplyExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplyExample.storyboard; sourceTree = "<group>"; };
 		378D670C250C2196005ABE66 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		37E7E1EF24FD777C00FAFF0B /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
 		37E7E1F624FD78AC00FAFF0B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				372D4A9D24FFE65D00E97D4E /* Reusable.swift */,
 				372D4AC5250048F600E97D4E /* DesignedInStoryboard.swift */,
 				372D4AA224FFE93B00E97D4E /* UITableView+Reusable.swift */,
+				37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -795,6 +798,7 @@
 				37E7E24624FFAD7A00FAFF0B /* NibLoadable.swift in Sources */,
 				3D9C42A222745900000A6585 /* Fastlee.swift in Sources */,
 				37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */,
+				37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */,
 				37E7E23524FDA31600FAFF0B /* Logger.swift in Sources */,
 				37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */,
 				37E7E22324FD7AF900FAFF0B /* UILabel+Truncated.swift in Sources */,
@@ -1019,7 +1023,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1037,6 +1042,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.mobilee.Fastlee;
 				PRODUCT_NAME = Fastlee;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1049,7 +1055,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1067,6 +1074,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.mobilee.Fastlee;
 				PRODUCT_NAME = Fastlee;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1114,6 +1122,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Resources/Info.plist;
@@ -1135,6 +1144,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Resources/Info.plist;
