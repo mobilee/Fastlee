@@ -14,7 +14,7 @@ open class AppCoordinator: Coordinator {
 
     // MARK: - Computed properties
 
-    var rootVC: UIViewController? {
+    public var rootVC: UIViewController? {
         return window.rootViewController
     }
 

@@ -38,6 +38,7 @@
 		3749842A24FFCBBD0097D8FD /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749842824FFCBBD0097D8FD /* PersonView.swift */; };
 		3749842B24FFCBBD0097D8FD /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3749842924FFCBBD0097D8FD /* PersonView.xib */; };
 		3749842D24FFCD230097D8FD /* LoadNibExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */; };
+		374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */; };
 		376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B45A125C0D5C100A0DF85 /* RateApp.swift */; };
 		378D66F62503BC55005ABE66 /* ExampleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */; };
 		378D66F82503BD1A005ABE66 /* ExampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */; };
@@ -55,7 +56,6 @@
 		37E7E21B24FD7A1F00FAFF0B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1FC24FD78AC00FAFF0B /* Router.swift */; };
 		37E7E21C24FD7A1F00FAFF0B /* Coordinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1FD24FD78AC00FAFF0B /* Coordinable.swift */; };
 		37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F624FD78AC00FAFF0B /* AppCoordinator.swift */; };
-		37E7E21E24FD7A2300FAFF0B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */; };
 		37E7E21F24FD7A2300FAFF0B /* PresentingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F824FD78AC00FAFF0B /* PresentingCoordinator.swift */; };
 		37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1FE24FD78AC00FAFF0B /* NavigationCoordinator.swift */; };
 		37E7E22124FD7A2300FAFF0B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1FF24FD78AC00FAFF0B /* Coordinator.swift */; };
@@ -786,6 +786,7 @@
 			files = (
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */,
+				374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */,
 				37E7E22924FD7B2700FAFF0B /* Bundle+Info.swift in Sources */,
 				37E7E22424FD7B0800FAFF0B /* UIColor+RGB.swift in Sources */,
 				37E7E23E24FE7C3600FAFF0B /* CallUtil.swift in Sources */,
@@ -813,7 +814,6 @@
 				37E7E22724FD7B1C00FAFF0B /* Date+Components.swift in Sources */,
 				37E7E23724FE79A200FAFF0B /* Fonts.swift in Sources */,
 				37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */,
-				37E7E21E24FD7A2300FAFF0B /* TabBarCoordinator.swift in Sources */,
 				372D4A9E24FFE65D00E97D4E /* Reusable.swift in Sources */,
 				37E7E22124FD7A2300FAFF0B /* Coordinator.swift in Sources */,
 				37E7E21C24FD7A1F00FAFF0B /* Coordinable.swift in Sources */,
