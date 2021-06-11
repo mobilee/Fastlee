@@ -76,6 +76,7 @@
 		37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E23F24FE84F600FAFF0B /* Defaults.swift */; };
 		37E7E24224FEA61700FAFF0B /* DefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E24124FEA61700FAFF0B /* DefaultsTests.swift */; };
 		37E7E24624FFAD7A00FAFF0B /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E24524FFAD7A00FAFF0B /* NibLoadable.swift */; };
+		37EA698C2673974D007BF8C7 /* UIBarButtonItem+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA698B2673974D007BF8C7 /* UIBarButtonItem+Init.swift */; };
 		3D9C42A222745900000A6585 /* Fastlee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* Fastlee.swift */; };
 		3D9C42F62274604A000A6585 /* Fastlee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Fastlee.framework */; };
 		3D9C42FC22746078000A6585 /* FastleeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* FastleeTests.swift */; };
@@ -190,6 +191,7 @@
 		37E7E23F24FE84F600FAFF0B /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		37E7E24124FEA61700FAFF0B /* DefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsTests.swift; sourceTree = "<group>"; };
 		37E7E24524FFAD7A00FAFF0B /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		37EA698B2673974D007BF8C7 /* UIBarButtonItem+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Init.swift"; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* Fastlee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fastlee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* Fastlee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fastlee.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* FastleeTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FastleeTests.plist; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37EA698A267396E3007BF8C7 /* UIBarButtonItem */,
 				37E7E20124FD79D400FAFF0B /* UIImage */,
 				37E7E20424FD79D400FAFF0B /* UILabel */,
 				37E7E20624FD79D400FAFF0B /* UIColor */,
@@ -517,6 +520,14 @@
 				37E7E24124FEA61700FAFF0B /* DefaultsTests.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		37EA698A267396E3007BF8C7 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				37EA698B2673974D007BF8C7 /* UIBarButtonItem+Init.swift */,
+			);
+			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		3D9C428622745894000A6585 = {
@@ -794,6 +805,7 @@
 				37E7E22524FD7B0E00FAFF0B /* UIColor+Adjust.swift in Sources */,
 				372D4AC42500485200E97D4E /* ViewTypeInitialization.swift in Sources */,
 				37E7E22B24FD7B2D00FAFF0B /* Comparable+Clamped.swift in Sources */,
+				37EA698C2673974D007BF8C7 /* UIBarButtonItem+Init.swift in Sources */,
 				37E7E21F24FD7A2300FAFF0B /* PresentingCoordinator.swift in Sources */,
 				372D4AC6250048F600E97D4E /* DesignedInStoryboard.swift in Sources */,
 				37E7E24624FFAD7A00FAFF0B /* NibLoadable.swift in Sources */,

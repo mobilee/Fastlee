@@ -39,7 +39,20 @@ class HomeViewController: UIViewController {
     // MARK: Private methods
 
     fileprivate func setupViews() {
-
+        createBarButton()
+    }
+    
+    func createBarButton() {
+        if #available(iOS 13.0, *) {
+            let button = UIBarButtonItem.create(with: UIImage(systemName: "pin")!, title: "Long Click it!", order: .imageRight, target: self, action: #selector(buttonHandler))
+            navigationItem.rightBarButtonItem = button
+        } else {
+            // Fallback on earlier versions
+        }
+    }
+    
+    @objc func buttonHandler() {
+        print("Button touched")
     }
 
 }
