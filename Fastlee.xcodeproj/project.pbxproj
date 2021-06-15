@@ -39,6 +39,7 @@
 		3749842B24FFCBBD0097D8FD /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3749842924FFCBBD0097D8FD /* PersonView.xib */; };
 		3749842D24FFCD230097D8FD /* LoadNibExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */; };
 		374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */; };
+		375C752D2678DCE60068A07B /* Map+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C752C2678DCE60068A07B /* Map+Center.swift */; };
 		376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B45A125C0D5C100A0DF85 /* RateApp.swift */; };
 		378D66F62503BC55005ABE66 /* ExampleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */; };
 		378D66F82503BD1A005ABE66 /* ExampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */; };
@@ -151,6 +152,7 @@
 		3749842824FFCBBD0097D8FD /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		3749842924FFCBBD0097D8FD /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadNibExample.storyboard; sourceTree = "<group>"; };
+		375C752C2678DCE60068A07B /* Map+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Center.swift"; sourceTree = "<group>"; };
 		376B45A125C0D5C100A0DF85 /* RateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleHeaderView.xib; sourceTree = "<group>"; };
 		378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderView.swift; sourceTree = "<group>"; };
@@ -349,6 +351,14 @@
 				372D4A9824FFD75200E97D4E /* Person3View.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		375C752B2678DCCE0068A07B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				375C752C2678DCE60068A07B /* Map+Center.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		378D66FE25069DC6005ABE66 /* Apply */ = {
@@ -577,6 +587,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				375C752B2678DCCE0068A07B /* Map */,
 				378D670B250C2182005ABE66 /* Style */,
 				378D66FE25069DC6005ABE66 /* Apply */,
 				372D4AC1250047CB00E97D4E /* Reusable */,
@@ -823,6 +834,7 @@
 				372D4AA124FFE7EB00E97D4E /* AssociatedObject.swift in Sources */,
 				372D4AA324FFE93B00E97D4E /* UITableView+Reusable.swift in Sources */,
 				37E7E21A24FD7A1F00FAFF0B /* Presentable.swift in Sources */,
+				375C752D2678DCE60068A07B /* Map+Center.swift in Sources */,
 				37E7E22724FD7B1C00FAFF0B /* Date+Components.swift in Sources */,
 				37E7E23724FE79A200FAFF0B /* Fonts.swift in Sources */,
 				37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */,
