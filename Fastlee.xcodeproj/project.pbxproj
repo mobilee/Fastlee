@@ -49,6 +49,17 @@
 		378D67032506E877005ABE66 /* Applyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66FF25069E20005ABE66 /* Applyer.swift */; };
 		378D67082506E98D005ABE66 /* ApplyExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D67072506E98D005ABE66 /* ApplyExampleViewController.swift */; };
 		378D670A2506E996005ABE66 /* ApplyExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D67092506E996005ABE66 /* ApplyExample.storyboard */; };
+		37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */; };
+		37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */; };
+		37C6F58526F385E600387CE1 /* UILabel+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */; };
+		37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58626F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift */; };
+		37C6F58F26F39AFD00387CE1 /* DrawShadowsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58926F39AFD00387CE1 /* DrawShadowsModule.swift */; };
+		37C6F59026F39AFD00387CE1 /* DrawShadowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58A26F39AFD00387CE1 /* DrawShadowsPresenter.swift */; };
+		37C6F59126F39AFD00387CE1 /* DrawShadowsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58B26F39AFD00387CE1 /* DrawShadowsRouter.swift */; };
+		37C6F59226F39AFD00387CE1 /* DrawShadowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58C26F39AFD00387CE1 /* DrawShadowsViewController.swift */; };
+		37C6F59326F39AFD00387CE1 /* DrawShadowsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58D26F39AFD00387CE1 /* DrawShadowsInteractor.swift */; };
+		37C6F59426F39AFD00387CE1 /* DrawShadowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58E26F39AFD00387CE1 /* DrawShadowsViewModel.swift */; };
+		37C6F59626F39B5000387CE1 /* DrawShadows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F59526F39B5000387CE1 /* DrawShadows.storyboard */; };
 		37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */; };
 		37E7E21724FD79FA00FAFF0B /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E20224FD79D400FAFF0B /* UIImage+Resize.swift */; };
 		37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */; };
@@ -163,6 +174,17 @@
 		378D67072506E98D005ABE66 /* ApplyExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyExampleViewController.swift; sourceTree = "<group>"; };
 		378D67092506E996005ABE66 /* ApplyExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplyExample.storyboard; sourceTree = "<group>"; };
 		378D670C250C2196005ABE66 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDrabable.swift; sourceTree = "<group>"; };
+		37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowDrawable.swift"; sourceTree = "<group>"; };
+		37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+ShadowDrawable.swift"; sourceTree = "<group>"; };
+		37C6F58626F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+ShadowDrawable.swift"; sourceTree = "<group>"; };
+		37C6F58926F39AFD00387CE1 /* DrawShadowsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsModule.swift; sourceTree = "<group>"; };
+		37C6F58A26F39AFD00387CE1 /* DrawShadowsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsPresenter.swift; sourceTree = "<group>"; };
+		37C6F58B26F39AFD00387CE1 /* DrawShadowsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsRouter.swift; sourceTree = "<group>"; };
+		37C6F58C26F39AFD00387CE1 /* DrawShadowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsViewController.swift; sourceTree = "<group>"; };
+		37C6F58D26F39AFD00387CE1 /* DrawShadowsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsInteractor.swift; sourceTree = "<group>"; };
+		37C6F58E26F39AFD00387CE1 /* DrawShadowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsViewModel.swift; sourceTree = "<group>"; };
+		37C6F59526F39B5000387CE1 /* DrawShadows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawShadows.storyboard; sourceTree = "<group>"; };
 		37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		37E7E1EF24FD777C00FAFF0B /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
@@ -305,6 +327,7 @@
 		3749840824FFC56B0097D8FD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				37C6F58826F39AEA00387CE1 /* DrawShadows */,
 				3749840924FFC5700097D8FD /* Home */,
 				3749841824FFCA8E0097D8FD /* LoadNibExample */,
 				372D4AA424FFED3A00E97D4E /* ReusableCellsExample */,
@@ -386,6 +409,31 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		37C6F57F26F384D700387CE1 /* ShadowDrawable */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */,
+				37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */,
+				37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */,
+				37C6F58626F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift */,
+			);
+			path = ShadowDrawable;
+			sourceTree = "<group>";
+		};
+		37C6F58826F39AEA00387CE1 /* DrawShadows */ = {
+			isa = PBXGroup;
+			children = (
+				37C6F58C26F39AFD00387CE1 /* DrawShadowsViewController.swift */,
+				37C6F58A26F39AFD00387CE1 /* DrawShadowsPresenter.swift */,
+				37C6F58D26F39AFD00387CE1 /* DrawShadowsInteractor.swift */,
+				37C6F58B26F39AFD00387CE1 /* DrawShadowsRouter.swift */,
+				37C6F58E26F39AFD00387CE1 /* DrawShadowsViewModel.swift */,
+				37C6F58926F39AFD00387CE1 /* DrawShadowsModule.swift */,
+				37C6F59526F39B5000387CE1 /* DrawShadows.storyboard */,
+			);
+			path = DrawShadows;
+			sourceTree = "<group>";
+		};
 		37E7E1F124FD77ED00FAFF0B /* Loadable */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +471,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37C6F57F26F384D700387CE1 /* ShadowDrawable */,
 				37EA698A267396E3007BF8C7 /* UIBarButtonItem */,
 				37E7E20124FD79D400FAFF0B /* UIImage */,
 				37E7E20424FD79D400FAFF0B /* UILabel */,
@@ -772,6 +821,7 @@
 				372D4A9124FFCEA100E97D4E /* Person2View.xib in Resources */,
 				3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */,
 				378D66F62503BC55005ABE66 /* ExampleHeaderView.xib in Resources */,
+				37C6F59626F39B5000387CE1 /* DrawShadows.storyboard in Resources */,
 				372D4AC024FFEF0D00E97D4E /* ExampleCell2.xib in Resources */,
 				3749842D24FFCD230097D8FD /* LoadNibExample.storyboard in Resources */,
 				3749842B24FFCBBD0097D8FD /* PersonView.xib in Resources */,
@@ -806,6 +856,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */,
 				374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */,
@@ -832,6 +883,7 @@
 				372D4A9C24FFE01100E97D4E /* HasNib.swift in Sources */,
 				37E7E23C24FE7C0F00FAFF0B /* Delay.swift in Sources */,
 				372D4AA124FFE7EB00E97D4E /* AssociatedObject.swift in Sources */,
+				37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */,
 				372D4AA324FFE93B00E97D4E /* UITableView+Reusable.swift in Sources */,
 				37E7E21A24FD7A1F00FAFF0B /* Presentable.swift in Sources */,
 				375C752D2678DCE60068A07B /* Map+Center.swift in Sources */,
@@ -839,10 +891,12 @@
 				37E7E23724FE79A200FAFF0B /* Fonts.swift in Sources */,
 				37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */,
 				372D4A9E24FFE65D00E97D4E /* Reusable.swift in Sources */,
+				37C6F58526F385E600387CE1 /* UILabel+ShadowDrawable.swift in Sources */,
 				37E7E22124FD7A2300FAFF0B /* Coordinator.swift in Sources */,
 				37E7E21C24FD7A1F00FAFF0B /* Coordinable.swift in Sources */,
 				37E7E21B24FD7A1F00FAFF0B /* Router.swift in Sources */,
 				37E7E21724FD79FA00FAFF0B /* UIImage+Resize.swift in Sources */,
+				37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */,
 				37E7E22E24FD7B4200FAFF0B /* Gradient.swift in Sources */,
 				376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */,
 			);
@@ -862,6 +916,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C6F59126F39AFD00387CE1 /* DrawShadowsRouter.swift in Sources */,
 				372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */,
 				3749842A24FFCBBD0097D8FD /* PersonView.swift in Sources */,
 				3749841F24FFCAA60097D8FD /* LoadNibExampleModule.swift in Sources */,
@@ -872,6 +927,7 @@
 				3749841224FFC5810097D8FD /* HomeRouter.swift in Sources */,
 				378D67082506E98D005ABE66 /* ApplyExampleViewController.swift in Sources */,
 				378D66FD250684B8005ABE66 /* ExampleStoryboardHeaderView.swift in Sources */,
+				37C6F59026F39AFD00387CE1 /* DrawShadowsPresenter.swift in Sources */,
 				3749841524FFC5810097D8FD /* HomeViewModel.swift in Sources */,
 				3749841324FFC5810097D8FD /* HomeViewController.swift in Sources */,
 				3749842224FFCAA60097D8FD /* LoadNibExampleViewController.swift in Sources */,
@@ -882,7 +938,11 @@
 				3749841124FFC5810097D8FD /* HomePresenter.swift in Sources */,
 				3749842024FFCAA60097D8FD /* LoadNibExamplePresenter.swift in Sources */,
 				3749840424FFC5000097D8FD /* MainCoordinator.swift in Sources */,
+				37C6F59426F39AFD00387CE1 /* DrawShadowsViewModel.swift in Sources */,
+				37C6F59326F39AFD00387CE1 /* DrawShadowsInteractor.swift in Sources */,
 				3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */,
+				37C6F58F26F39AFD00387CE1 /* DrawShadowsModule.swift in Sources */,
+				37C6F59226F39AFD00387CE1 /* DrawShadowsViewController.swift in Sources */,
 				378D66FB2506837B005ABE66 /* ExampleClassHeaderView.swift in Sources */,
 				3738BA5725013C1100F99BF8 /* ExampleCell1.swift in Sources */,
 				3749842124FFCAA60097D8FD /* LoadNibExampleRouter.swift in Sources */,

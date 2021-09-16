@@ -15,6 +15,7 @@ struct HomeViewModel {
         
         case nibLoadExample
         case reusableCellsExample
+        case shadows
         
         
         var title: String {
@@ -23,6 +24,8 @@ struct HomeViewModel {
                 return "Load views from NIB example"
             case .reusableCellsExample:
                 return "Load reusable cells"
+            case .shadows:
+                return "Draw shadows to UIViews"
             default:
                 return "No title"
             }

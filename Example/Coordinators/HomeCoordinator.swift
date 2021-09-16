@@ -27,8 +27,13 @@ extension HomeCoordinator: HomeRouter {
         let view = ReusableCellsExampleViewController.instantiate()
         push(view, animated: true)
     }
+    
+    func openDrawShadows(from viewController: UIViewController) {
+        let view = DrawShadowsModule.build(for: self)
+        push(view, animated: true)
+    }
 }
 
-extension HomeCoordinator: LoadNibExampleRouter {
-    
-}
+extension HomeCoordinator: LoadNibExampleRouter {}
+
+extension HomeCoordinator: DrawShadowsRouter {}

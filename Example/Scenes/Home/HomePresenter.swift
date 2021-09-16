@@ -72,6 +72,8 @@ extension HomePresenter: UITableViewDataSource, UITableViewDelegate {
             router?.openNibLoadExample(from: view!)
         case .reusableCellsExample:
             router?.openReusableCellsExample(from: view!)
+        case .shadows:
+            router?.openDrawShadows(from: view!)
         default:
             return
         }
