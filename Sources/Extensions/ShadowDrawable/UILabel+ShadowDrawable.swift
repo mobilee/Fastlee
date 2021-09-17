@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ShadowDrawable where Self: UILabel {
+public extension ShadowDrawable where Self: UILabel {
     func drawShadow(with color: UIColor, opacity: Float, radius: CGFloat) {
         layer.shadowColor = color.cgColor
         layer.shadowRadius = radius

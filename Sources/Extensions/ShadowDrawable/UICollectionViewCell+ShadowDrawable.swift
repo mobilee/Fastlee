@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ShadowDrawable where Self: UICollectionViewCell {
+public extension ShadowDrawable where Self: UICollectionViewCell {
     func drawShadow(with color: UIColor, opacity: Float, radius: CGFloat) {
         let cornerRadius = layer.cornerRadius
         let path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
