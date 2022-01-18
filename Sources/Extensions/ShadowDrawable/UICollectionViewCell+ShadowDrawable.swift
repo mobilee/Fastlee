@@ -19,7 +19,7 @@ public extension ShadowDrawable where Self: UICollectionViewCell {
         contentView.layer.masksToBounds = true
 
         layer.shadowColor = UIColor.gray.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: -2.0)
+        layer.shadowOffset = CGSize(width: -2.0, height: -2.0)
         layer.shadowRadius = radius
         layer.shadowOpacity = opacity
         layer.masksToBounds = false

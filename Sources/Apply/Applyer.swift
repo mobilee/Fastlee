@@ -38,10 +38,11 @@ extension Appliable {
 
      ```
      let button = UIButton()
-     button.apply(.filled).apply(.rounded)
+     button.apply(using: .filled).apply(using: .rounded)
      ```
 
      - parameter configuration: The configuration to apply.
+     - Author: Mobilee - Łukasz Szarkowicz
      */
     @discardableResult
     public func apply(using configuration: Applyer<Self>) -> Self {
