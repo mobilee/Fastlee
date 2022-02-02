@@ -74,6 +74,8 @@ extension HomePresenter: UITableViewDataSource, UITableViewDelegate {
             router?.openReusableCellsExample(from: view!)
         case .shadows:
             router?.openDrawShadows(from: view!)
+        case .showDatePicker:
+            router?.openDatePicker(from: view!)
         default:
             return
         }

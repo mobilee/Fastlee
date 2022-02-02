@@ -13,5 +13,6 @@ protocol HomeRouter: class {
     func openNibLoadExample(from viewController: UIViewController)
     func openReusableCellsExample(from viewController: UIViewController)
     func openDrawShadows(from viewController: UIViewController)
+    func openDatePicker(from viewController: UIViewController)
 }
 

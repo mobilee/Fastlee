@@ -32,6 +32,17 @@ extension HomeCoordinator: HomeRouter {
         let view = DrawShadowsModule.build(for: self)
         push(view, animated: true)
     }
+    
+    func openDatePicker(from viewController: UIViewController) {
+        if #available(iOS 14.0, *) {
+            let picker = DatePicker()
+            picker.configure(mode: .date, date: nil, minimumDate: nil, maximumDate: nil)
+            
+//            let view = picker.toAlertController(title: "Title example", message: "Message here ...", sourceView: nil, buttonTitle: "OK", handler: nil)
+            let view = picker.toAlertController(title: nil, message: nil, sourceView: nil, buttonTitle: "OK", handler: nil)
+            present(view, animated: true, completion: nil)
+        }
+    }
 }
 
 extension HomeCoordinator: LoadNibExampleRouter {}

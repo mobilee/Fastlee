@@ -16,6 +16,7 @@ struct HomeViewModel {
         case nibLoadExample
         case reusableCellsExample
         case shadows
+        case showDatePicker
         
         
         var title: String {
@@ -26,6 +27,8 @@ struct HomeViewModel {
                 return "Load reusable cells"
             case .shadows:
                 return "Draw shadows to UIViews"
+            case .showDatePicker:
+                return "Show custom date picker"
             default:
                 return "No title"
             }

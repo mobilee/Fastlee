@@ -39,6 +39,7 @@
 		3749842B24FFCBBD0097D8FD /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3749842924FFCBBD0097D8FD /* PersonView.xib */; };
 		3749842D24FFCD230097D8FD /* LoadNibExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */; };
 		374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */; };
+		3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758B29227AACAA0007ECB33 /* DatePicker.swift */; };
 		375C752D2678DCE60068A07B /* Map+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C752C2678DCE60068A07B /* Map+Center.swift */; };
 		376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B45A125C0D5C100A0DF85 /* RateApp.swift */; };
 		376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C147B27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift */; };
@@ -133,6 +134,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
 		372D4A8E24FFCEA100E97D4E /* Person2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2View.swift; sourceTree = "<group>"; };
 		372D4A8F24FFCEA100E97D4E /* Person2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Person2View.xib; sourceTree = "<group>"; };
 		372D4A9724FFD75200E97D4E /* Person3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person3View.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		3749842824FFCBBD0097D8FD /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		3749842924FFCBBD0097D8FD /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadNibExample.storyboard; sourceTree = "<group>"; };
+		3758B29227AACAA0007ECB33 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		375C752C2678DCE60068A07B /* Map+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Center.swift"; sourceTree = "<group>"; };
 		376B45A125C0D5C100A0DF85 /* RateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		376C147B27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+ResignFirstResponder.swift"; sourceTree = "<group>"; };
@@ -273,6 +276,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37251AE027AADE970096C143 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37251AE127AADEAE0096C143 /* calendar_example.PNG */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		372D4A9F24FFE7DA00E97D4E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +387,14 @@
 				372D4A9824FFD75200E97D4E /* Person3View.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3758B29127AACA5E007ECB33 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3758B29227AACAA0007ECB33 /* DatePicker.swift */,
+			);
+			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		375C752B2678DCCE0068A07B /* Map */ = {
@@ -647,6 +666,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3758B29127AACA5E007ECB33 /* DatePicker */,
 				375C752B2678DCCE0068A07B /* Map */,
 				378D670B250C2182005ABE66 /* Style */,
 				378D66FE25069DC6005ABE66 /* Apply */,
@@ -675,6 +695,7 @@
 		3D9C43222274629B000A6585 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				37251AE027AADE970096C143 /* Images */,
 				3749840824FFC56B0097D8FD /* Scenes */,
 				3749840224FFC4EC0097D8FD /* Coordinators */,
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
@@ -911,6 +932,7 @@
 				37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */,
 				37E7E22E24FD7B4200FAFF0B /* Gradient.swift in Sources */,
 				376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */,
+				3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
