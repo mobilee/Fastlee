@@ -84,14 +84,14 @@ final public class DatePicker: UIViewController {
         
 //        action.setValue(UIColor.red, forKey: "titleTextColor")
         alert.addAction(action)
-        let actionHandler = UIAction { [weak self] action in
-            guard let date = (action.sender as? UIDatePicker)?.date else {
-                return
-            }
-            handler?(date)
-            alert.dismiss(animated: true, completion: nil)
-        }
-        datePicker.addAction(actionHandler, for: .valueChanged)
+//        let actionHandler = UIAction { [weak self] action in
+//            guard let date = (action.sender as? UIDatePicker)?.date else {
+//                return
+//            }
+//            handler?(date)
+//            alert.dismiss(animated: true, completion: nil)
+//        }
+//        datePicker.addAction(actionHandler, for: .valueChanged)
         
         return alert
     }
