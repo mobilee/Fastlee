@@ -36,6 +36,10 @@
 
 The example application is the best way to see `Fastlee` in action. Simply open the `Fastlee.xcodeproj` and run the `Example` scheme.
 
+### Date picker Demo
+
+<img src="https://github.com/mobilee/Fastlee/blob/master/Example/Images/calendar_example.PNG?raw=true" width="230">
+
 ## Installation
 
 ### CocoaPods
