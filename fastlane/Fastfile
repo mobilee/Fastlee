@@ -98,5 +98,11 @@ platform :ios do
     # Delete SPM build artifacts
     # spm(command: "clean")
   end
+  
+  desc "Push pod"
+  lane :podPush do
+    # Pod push / Pod trunk
+    pod_push(allow_warnings: true)
+  end
 
 end
