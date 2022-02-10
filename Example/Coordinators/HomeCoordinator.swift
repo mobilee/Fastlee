@@ -36,10 +36,12 @@ extension HomeCoordinator: HomeRouter {
     func openDatePicker(from viewController: UIViewController) {
         if #available(iOS 14.0, *) {
             let picker = DatePicker()
-            picker.configure(mode: .date, date: nil, minimumDate: nil, maximumDate: nil)
+            picker.configure(mode: .date, date: Date(), minimumDate: nil, maximumDate: Date())
             
 //            let view = picker.toAlertController(title: "Title example", message: "Message here ...", sourceView: nil, buttonTitle: "OK", handler: nil)
             let view = picker.toAlertController(title: nil, message: nil, sourceView: nil, buttonTitle: "OK", handler: nil)
+            
+//            (navigationController as! UIViewController).present(view, animated: true, completion: nil)
             present(view, animated: true, completion: nil)
         }
     }

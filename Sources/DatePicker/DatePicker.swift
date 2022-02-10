@@ -93,6 +93,9 @@ final public class DatePicker: UIViewController {
 //        }
 //        datePicker.addAction(actionHandler, for: .valueChanged)
         
+        view.setNeedsLayout()
+        view.layoutIfNeeded()
+        
         return alert
     }
 }
