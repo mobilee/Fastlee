@@ -51,6 +51,8 @@
 		378D67032506E877005ABE66 /* Applyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66FF25069E20005ABE66 /* Applyer.swift */; };
 		378D67082506E98D005ABE66 /* ApplyExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D67072506E98D005ABE66 /* ApplyExampleViewController.swift */; };
 		378D670A2506E996005ABE66 /* ApplyExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D67092506E996005ABE66 /* ApplyExample.storyboard */; };
+		378E36C427B678A6001AFDE6 /* KeyboardReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */; };
+		378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */; };
 		37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */; };
 		37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */; };
 		37C6F58526F385E600387CE1 /* UILabel+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */; };
@@ -179,6 +181,8 @@
 		378D67072506E98D005ABE66 /* ApplyExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyExampleViewController.swift; sourceTree = "<group>"; };
 		378D67092506E996005ABE66 /* ApplyExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplyExample.storyboard; sourceTree = "<group>"; };
 		378D670C250C2196005ABE66 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReactable.swift; sourceTree = "<group>"; };
+		378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FindFirstResponder.swift"; sourceTree = "<group>"; };
 		37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDrabable.swift; sourceTree = "<group>"; };
 		37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowDrawable.swift"; sourceTree = "<group>"; };
 		37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+ShadowDrawable.swift"; sourceTree = "<group>"; };
@@ -438,6 +442,14 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		378E36C227B67886001AFDE6 /* KeyboardReactable */ = {
+			isa = PBXGroup;
+			children = (
+				378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */,
+			);
+			path = KeyboardReactable;
+			sourceTree = "<group>";
+		};
 		37C6F57F26F384D700387CE1 /* ShadowDrawable */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				37E7E20A24FD79D400FAFF0B /* UIView+Add.swift */,
+				378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -666,6 +679,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				378E36C227B67886001AFDE6 /* KeyboardReactable */,
 				3758B29127AACA5E007ECB33 /* DatePicker */,
 				375C752B2678DCCE0068A07B /* Map */,
 				378D670B250C2182005ABE66 /* Style */,
@@ -891,6 +905,7 @@
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
+				378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */,
 				37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */,
 				374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */,
 				37E7E22924FD7B2700FAFF0B /* Bundle+Info.swift in Sources */,
@@ -924,6 +939,7 @@
 				37E7E23724FE79A200FAFF0B /* Fonts.swift in Sources */,
 				37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */,
 				372D4A9E24FFE65D00E97D4E /* Reusable.swift in Sources */,
+				378E36C427B678A6001AFDE6 /* KeyboardReactable.swift in Sources */,
 				37C6F58526F385E600387CE1 /* UILabel+ShadowDrawable.swift in Sources */,
 				37E7E22124FD7A2300FAFF0B /* Coordinator.swift in Sources */,
 				37E7E21C24FD7A1F00FAFF0B /* Coordinable.swift in Sources */,
