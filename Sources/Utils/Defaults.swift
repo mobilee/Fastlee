@@ -27,7 +27,7 @@ public struct UserDefault<T: UserDefaultsCompatible>: UserDefaultOperating {
     private let defaultValue: T
     public let suiteName: String?
 
-    init(key: String, defaultValue: T, suiteName: String? = nil) {
+    public init(key: String, defaultValue: T, suiteName: String? = nil) {
         self.key = key
         self.defaultValue = defaultValue
         self.suiteName = suiteName
@@ -50,7 +50,7 @@ public struct OptionalUserDefault<T: UserDefaultsCompatible>: UserDefaultOperati
     public let key: String
     public let suiteName: String?
 
-    init(key: String, suiteName: String? = nil) {
+    public init(key: String, suiteName: String? = nil) {
         self.key = key
         self.suiteName = suiteName
     }
