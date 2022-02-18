@@ -43,6 +43,7 @@
 		375C752D2678DCE60068A07B /* Map+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C752C2678DCE60068A07B /* Map+Center.swift */; };
 		376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B45A125C0D5C100A0DF85 /* RateApp.swift */; };
 		376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C147B27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift */; };
+		3784D9B627BF91A700A9CD5E /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3784D9B527BF91A700A9CD5E /* AppLauncher.swift */; };
 		378D66F62503BC55005ABE66 /* ExampleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */; };
 		378D66F82503BD1A005ABE66 /* ExampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */; };
 		378D66FB2506837B005ABE66 /* ExampleClassHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66FA2506837B005ABE66 /* ExampleClassHeaderView.swift */; };
@@ -172,6 +173,7 @@
 		375C752C2678DCE60068A07B /* Map+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Center.swift"; sourceTree = "<group>"; };
 		376B45A125C0D5C100A0DF85 /* RateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		376C147B27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+ResignFirstResponder.swift"; sourceTree = "<group>"; };
+		3784D9B527BF91A700A9CD5E /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
 		378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleHeaderView.xib; sourceTree = "<group>"; };
 		378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderView.swift; sourceTree = "<group>"; };
 		378D66FA2506837B005ABE66 /* ExampleClassHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleClassHeaderView.swift; sourceTree = "<group>"; };
@@ -612,6 +614,7 @@
 				37E7E23D24FE7C3600FAFF0B /* CallUtil.swift */,
 				37E7E23F24FE84F600FAFF0B /* Defaults.swift */,
 				376B45A125C0D5C100A0DF85 /* RateApp.swift */,
+				3784D9B527BF91A700A9CD5E /* AppLauncher.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -949,6 +952,7 @@
 				37E7E22E24FD7B4200FAFF0B /* Gradient.swift in Sources */,
 				376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */,
 				3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */,
+				3784D9B627BF91A700A9CD5E /* AppLauncher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,8 +1263,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1282,8 +1286,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,6 +7,7 @@
 //  
 
 import UIKit
+import Fastlee
 
 protocol HomePresenterLogic: class, UITableViewDelegate & UITableViewDataSource {
 	// interface for passing data from Interactor to Presenter
@@ -76,6 +77,8 @@ extension HomePresenter: UITableViewDataSource, UITableViewDelegate {
             router?.openDrawShadows(from: view!)
         case .showDatePicker:
             router?.openDatePicker(from: view!)
+        case .openMailApp:
+            AppLauncher.mail.open()
         default:
             return
         }

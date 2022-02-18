@@ -17,6 +17,7 @@ struct HomeViewModel {
         case reusableCellsExample
         case shadows
         case showDatePicker
+        case openMailApp
         
         
         var title: String {
@@ -29,6 +30,8 @@ struct HomeViewModel {
                 return "Draw shadows to UIViews"
             case .showDatePicker:
                 return "Show custom date picker"
+            case .openMailApp:
+                return "Open external mail app"
             default:
                 return "No title"
             }
