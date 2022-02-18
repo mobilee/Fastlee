@@ -41,7 +41,8 @@ private class Logger {
             + "\n   file: \(fileName)"
             + "\n   line: \(line)"
             + "\n   message: \(msgDescription)"
-        debugPrint(msg)
+            + "\n--------------------\n"
+        Swift.print(msg)
     }
 }
 

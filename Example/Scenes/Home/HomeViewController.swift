@@ -7,6 +7,7 @@
 
 
 import UIKit
+import Fastlee
 
 protocol HomeDisplayLogic: class {
 	func setPresenter(_ presenter: HomePresenterLogic)
@@ -34,6 +35,8 @@ class HomeViewController: UIViewController {
         tableView.delegate = presenter
         tableView.dataSource = presenter
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        logWarning(message: "This is example warning")
     }
 
     // MARK: Private methods
