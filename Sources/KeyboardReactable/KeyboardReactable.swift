@@ -14,6 +14,13 @@ public protocol KeyboardReactable {
 
 public extension KeyboardReactable where Self: UIView {
     
+    func shouldReact(with keyboardHeight: CGFloat) -> Bool {
+        let height = scrollView.bounds.height
+        let contentHeight = scrollView.contentSize.height
+        
+        return height-keyboardHeight < contentHeight
+    }
+    
     /**
      Default implementation with animation when keyboard show
      
@@ -45,7 +52,7 @@ public extension KeyboardReactable where Self: UIView {
         var contentOffset = scrollView.contentOffset
         
         // calculate scroll position
-        if let firstResponsder = findFirstResponder() as? UITextField {
+        if let firstResponsder = findFirstResponder() as? UITextField, shouldReact(with: keyboardSize.height) {
             let screenHeight = frame.size.height
             let keyboardTopPoint = screenHeight - keyboardSize.height
             let offset = keyboardTopPoint / 4.0 + safeOffset
