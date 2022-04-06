@@ -31,4 +31,14 @@ open class TabBarCoordinator: Coordinator, UITabBarControllerDelegate {
     open override func presentableViewController() -> UIViewController {
         return tabController
     }
+    
+    /**
+     Select tab in UITabBarController defined by provided coordinator.
+     - parameter coordinator: Coordinator object for which is searched viewController to select it in UITabBarController
+     - Author: Mobilee - Łukasz Szarkowicz
+     */
+    public func selectCoordinatorTab(_ coordinator: Coordinator) {
+        let vc = coordinator.presentableViewController()
+        tabController.selectViewController(vc)
+    }
 }
