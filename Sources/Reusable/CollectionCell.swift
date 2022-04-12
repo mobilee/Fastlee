@@ -36,6 +36,18 @@ public final class CollectionCell<EmbedView>: UICollectionViewCell where EmbedVi
         contentView.layoutMargins = .zero
     }
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        embedView.layoutSubviews()
+    }
+    
+    @available(iOS 11.0, *)
+    public override func safeAreaInsetsDidChange() {
+        super.safeAreaInsetsDidChange()
+        embedView.safeAreaInsetsDidChange()
+    }
+    
+    
     public override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         let targetSize = CGSize(width: layoutAttributes.frame.width, height: 0)
         layoutAttributes.frame.size = contentView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
