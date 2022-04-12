@@ -39,6 +39,8 @@
 		3749842B24FFCBBD0097D8FD /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3749842924FFCBBD0097D8FD /* PersonView.xib */; };
 		3749842D24FFCD230097D8FD /* LoadNibExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */; };
 		374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F724FD78AC00FAFF0B /* TabBarCoordinator.swift */; };
+		3750C9F72805735C00D4AFC3 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3750C9F62805735C00D4AFC3 /* CollectionCell.swift */; };
+		3750C9F92805742B00D4AFC3 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3750C9F82805742B00D4AFC3 /* Anchor.swift */; };
 		3750D4FB27FDEBEA002CFD08 /* UITabBarController+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3750D4FA27FDEBEA002CFD08 /* UITabBarController+Select.swift */; };
 		3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758B29227AACAA0007ECB33 /* DatePicker.swift */; };
 		375C752D2678DCE60068A07B /* Map+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C752C2678DCE60068A07B /* Map+Center.swift */; };
@@ -170,6 +172,8 @@
 		3749842824FFCBBD0097D8FD /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		3749842924FFCBBD0097D8FD /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		3749842C24FFCD230097D8FD /* LoadNibExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadNibExample.storyboard; sourceTree = "<group>"; };
+		3750C9F62805735C00D4AFC3 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		3750C9F82805742B00D4AFC3 /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
 		3750D4FA27FDEBEA002CFD08 /* UITabBarController+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Select.swift"; sourceTree = "<group>"; };
 		3758B29227AACAA0007ECB33 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		375C752C2678DCE60068A07B /* Map+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Center.swift"; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 				372D4AC5250048F600E97D4E /* DesignedInStoryboard.swift */,
 				372D4AA224FFE93B00E97D4E /* UITableView+Reusable.swift */,
 				37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */,
+				3750C9F62805735C00D4AFC3 /* CollectionCell.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -626,6 +631,7 @@
 				37E7E23F24FE84F600FAFF0B /* Defaults.swift */,
 				376B45A125C0D5C100A0DF85 /* RateApp.swift */,
 				3784D9B527BF91A700A9CD5E /* AppLauncher.swift */,
+				3750C9F82805742B00D4AFC3 /* Anchor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -932,9 +938,11 @@
 				37EA698C2673974D007BF8C7 /* UIBarButtonItem+Init.swift in Sources */,
 				37E7E21F24FD7A2300FAFF0B /* PresentingCoordinator.swift in Sources */,
 				372D4AC6250048F600E97D4E /* DesignedInStoryboard.swift in Sources */,
+				3750C9F92805742B00D4AFC3 /* Anchor.swift in Sources */,
 				37E7E24624FFAD7A00FAFF0B /* NibLoadable.swift in Sources */,
 				3D9C42A222745900000A6585 /* Fastlee.swift in Sources */,
 				37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */,
+				3750C9F72805735C00D4AFC3 /* CollectionCell.swift in Sources */,
 				37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */,
 				37E7E23524FDA31600FAFF0B /* Logger.swift in Sources */,
 				37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */,

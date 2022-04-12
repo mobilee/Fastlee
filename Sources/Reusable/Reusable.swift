@@ -8,14 +8,16 @@
 
 import UIKit
 
-internal protocol Reusable: AnyObject {
+public protocol Reusable: AnyObject {
     /// Used for registering and dequeuing a reusable cell
     static var reuseIdentifier: String { get }
     static var nibName: String? { get }
     static var nib: UINib? { get }
+    
+    func prepareForReuse()
 }
 
-internal extension Reusable {
+public extension Reusable {
 
     /// Default implementation of reuseIdentifier - take name of the class
     static var reuseIdentifier: String {
@@ -38,7 +40,7 @@ internal extension Reusable {
         }
     }
     
-    static var viewType: ViewTypeInitialization {
+    internal static var viewType: ViewTypeInitialization {
         if let nib = nib {
             return .nib(nibObject: nib)
         } else if Self.self is DesignedInStoryboard.Type {
