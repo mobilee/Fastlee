@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
 		372D4A9124FFCEA100E97D4E /* Person2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372D4A8F24FFCEA100E97D4E /* Person2View.xib */; };
 		372D4A9924FFD75200E97D4E /* Person3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A9724FFD75200E97D4E /* Person3View.swift */; };
@@ -143,6 +144,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
 		372D4A8E24FFCEA100E97D4E /* Person2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2View.swift; sourceTree = "<group>"; };
 		372D4A8F24FFCEA100E97D4E /* Person2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Person2View.xib; sourceTree = "<group>"; };
@@ -294,6 +296,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37207551286218C200A37019 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				37207552286218E100A37019 /* UIViewController+UINavigationController.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		37251AE027AADE970096C143 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +562,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37207551286218C200A37019 /* UIViewController */,
 				3739F9232836889E007CCDF9 /* Array */,
 				3750D4F927FDEBCD002CFD08 /* UITabBarController */,
 				376C147A27972C9600A9F612 /* UIResponder */,
@@ -947,6 +958,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */,
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
