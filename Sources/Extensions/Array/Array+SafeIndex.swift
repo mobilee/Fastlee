@@ -29,6 +29,9 @@ public extension Array {
      - Author: Mobilee - Łukasz Szarkowicz
      */
     subscript(safe indexRange: ClosedRange<Int>) -> [Element] {
+        guard indices.endIndex != 0 else {
+            return Array()
+        }
         let localSafeRange = indices.startIndex...indices.endIndex-1
         let newRange = indexRange.clamped(to: localSafeRange)
         
