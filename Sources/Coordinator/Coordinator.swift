@@ -10,28 +10,39 @@ import UIKit
 
 open class Coordinator: NSObject, Coordinable {
     
+    // MARK: - Deinit
     deinit {
         removeAllChildCoordinators()
-        print("\(self) has been deinited")
+        logInfo(message: "\(Self.coordinatorName) has been deinited: \(self)")
+    }
+    
+    private static var coordinatorName: String {
+        return String(describing: self)
     }
 
-    fileprivate(set) weak var parentCoordinator: Coordinator?
+    /// Root view controller of Coordinator
+    public var rootViewController: UIViewController? {
+        return nil
+    }
+    
     public private(set) var childCoordinators: [Coordinable]
+    
+    /// Closure function used to remove coordinator from parent coordinator.
+    internal var didFinish: ((Coordinator) -> Void)?
 
-    override public init() {
+    public override init() {
         childCoordinators = []
         super.init()
-        
-        start()
     }
     
     open func start() {
         fatalError("Implementation for start() method not provided. Provide implementation for \(self)")
     }
     
+    /// Use this function to end coordinator.
     open func end() {
         removeAllChildCoordinators()
-        parentCoordinator?.remove(coordinator: self)
+        didFinish?(self)
     }
     
     open func presentableViewController() -> UIViewController {
@@ -41,14 +52,17 @@ open class Coordinator: NSObject, Coordinable {
 
 extension Coordinator {
 
-    public func add<T: Coordinator>(coordinator: T) {
-        coordinator.parentCoordinator = self
+    public func addCoordinator<T: Coordinator>(_ coordinator: T) {
+        coordinator.didFinish = { [weak self] (coordinator) in
+            self?.removeCoordinator(coordinator)
+            
+        }
+        coordinator.start()
         childCoordinators.append(coordinator)
     }
 
-    public func remove<T: Coordinator>(coordinator: T) {
+    private func removeCoordinator<T: Coordinator>(_ coordinator: T) {
         childCoordinators = childCoordinators.filter { $0 !== coordinator }
-        coordinator.parentCoordinator = nil
     }
     
     /// Remove all child coordinators

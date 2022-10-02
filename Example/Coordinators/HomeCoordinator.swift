@@ -45,6 +45,11 @@ extension HomeCoordinator: HomeRouter {
             present(view, animated: true, completion: nil)
         }
     }
+    
+    func openCoordinatorExample(from viewController: UIViewController) {
+        let coord = NaviExampleCoordinator(navigationController: self.navigationController)
+        addCoordinator(coord)
+    }
 }
 
 extension HomeCoordinator: LoadNibExampleRouter {}

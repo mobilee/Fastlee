@@ -79,6 +79,8 @@ extension HomePresenter: UITableViewDataSource, UITableViewDelegate {
             router?.openDatePicker(from: view!)
         case .openMailApp:
             AppLauncher.mail.open()
+        case .coordinatorExample:
+            router?.openCoordinatorExample(from: view!)
         default:
             return
         }

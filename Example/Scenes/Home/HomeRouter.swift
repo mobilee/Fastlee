@@ -14,5 +14,6 @@ protocol HomeRouter: class {
     func openReusableCellsExample(from viewController: UIViewController)
     func openDrawShadows(from viewController: UIViewController)
     func openDatePicker(from viewController: UIViewController)
+    func openCoordinatorExample(from viewController: UIViewController)
 }
 

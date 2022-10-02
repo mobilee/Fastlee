@@ -8,51 +8,95 @@
 
 import UIKit
 
-open class NavigationCoordinator: Coordinator {
+//extension Array where Element: Equatable {
+//
+//    func nextAfter(_ element: Element) -> Element? {
+//        guard let index = firstIndex(of: element) else { return nil }
+//        let nextIndex = index.advanced(by: 1)
+//
+//        return self[safe: nextIndex]
+//    }
+//}
+
+open class NavigationCoordinator: Coordinator, UINavigationControllerDelegate {
 
     deinit {
         // IMPORTANT: During deinit() all viewControllers should be removed from navigationController to avoid retain cycle.
-        navigationController.setViewControllers([], animated: false)
-        navigationController = nil
-    }
-    
-    public var navigationController: UINavigationController!
-
-    public init(navigationController: UINavigationController = UINavigationController()) {
-        self.navigationController = navigationController
-        super.init()
+        if initialViewController == nil {
+            navigationController.setViewControllers([], animated: false)
+            navigationController = nil
+        }
     }
     
     public override func presentableViewController() -> UIViewController {
         return navigationController
     }
     
-    public func push(_ presentable: Presentable, animated: Bool) {
-        let view = presentable.presentableViewController()
-        guard view is UINavigationController == false else {
-            print("Push UINavigationController on UINavigationController is not allowed")
-            return
+    public override var rootViewController: UIViewController? {
+        return navigationController
+    }
+    
+    public var initialViewController: UIViewController?
+    
+    public var firstViewController: UIViewController? {
+        guard let initialViewController = initialViewController else {
+            return navigationController.viewControllers.first
         }
-       
-        DispatchQueue.main.async {
-            self.navigationController.pushViewController(view, animated: animated)
+        
+        let vc = navigationController.viewControllers.nextAfter(initialViewController)
+        return vc ?? navigationController.viewControllers.first
+    }
+
+    public var navigationController: UINavigationController!
+    
+    private var childNavigationCoordinators: [NavigationCoordinator] {
+        return childCoordinators.filter({ $0 is NavigationCoordinator }) as! [NavigationCoordinator]
+    }
+
+    public init(navigationController: UINavigationController = UINavigationController()) {
+        self.navigationController = navigationController
+        super.init()
+        self.initialViewController = navigationController.viewControllers.last
+        
+        if self.initialViewController == nil {
+            navigationController.delegate = self
         }
     }
     
-    public func pop(_ animated: Bool) {
-        DispatchQueue.main.async {
-            self.navigationController.popViewController(animated: animated)
-        }
-    }
 
-    public func popToRoot(_ animated: Bool) {
-        DispatchQueue.main.async {
-            self.navigationController.popToRootViewController(animated: animated)
-        }
-    }
+    
+    
     
     public func setViewControllers(_ viewControllers: [UIViewController], animated: Bool) {
         removeAllChildCoordinators()
         navigationController.setViewControllers(viewControllers, animated: animated)
+    }
+    
+    open override func end() {
+        if let viewController = initialViewController {
+            navigationController.popToViewController(viewController, animated: true)
+        } else {
+            navigationController.popToRootViewController(animated: true)
+            
+        }
+        super.end()
+    }
+    
+    // MARK: - UINavigationControllerDelegate
+    
+    public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        
+        
+    }
+    
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        
+        for child in childNavigationCoordinators {
+            child.navigationController(navigationController, didShow: viewController, animated: animated)
+        }
+        
+        if viewController === initialViewController {
+            didFinish?(self)
+        }
     }
 }

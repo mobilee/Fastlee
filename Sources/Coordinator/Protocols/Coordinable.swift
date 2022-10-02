@@ -9,6 +9,7 @@
 import UIKit
 
 public protocol Coordinable: AnyObject, Presentable, Dismissable {
+    var rootViewController: UIViewController? { get }
     var childCoordinators: [Coordinable] { get }
     func start()
 }

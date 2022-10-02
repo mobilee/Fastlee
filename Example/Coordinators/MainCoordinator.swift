@@ -14,7 +14,7 @@ class MainCoordinator: AppCoordinator {
     override func start() {
         let coord = HomeCoordinator()
         
-        add(coordinator: coord)
+        addCoordinator(coord)
         setRoot(coord)
     }
 }

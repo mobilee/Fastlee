@@ -18,6 +18,7 @@ struct HomeViewModel {
         case shadows
         case showDatePicker
         case openMailApp
+        case coordinatorExample
         
         
         var title: String {
@@ -32,6 +33,8 @@ struct HomeViewModel {
                 return "Show custom date picker"
             case .openMailApp:
                 return "Open external mail app"
+            case .coordinatorExample:
+                return "Coordinator pattern example flow"
             default:
                 return "No title"
             }

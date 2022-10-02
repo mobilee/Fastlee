@@ -13,8 +13,7 @@ open class AppCoordinator: Coordinator {
     fileprivate let window: UIWindow
 
     // MARK: - Computed properties
-
-    public var rootVC: UIViewController? {
+    public override var rootViewController: UIViewController? {
         return window.rootViewController
     }
 
@@ -23,6 +22,7 @@ open class AppCoordinator: Coordinator {
     public init(window: UIWindow) {
         self.window = window
         super.init()
+        start()
     }
     
     internal override init() {

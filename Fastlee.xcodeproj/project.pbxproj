@@ -62,6 +62,12 @@
 		378E36C427B678A6001AFDE6 /* KeyboardReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */; };
 		378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */; };
 		3793B9632893F98200AF016A /* MailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793B9622893F98200AF016A /* MailComposer.swift */; };
+		379FBB9528D07EEA0025584E /* NaviExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FBB9428D07EEA0025584E /* NaviExampleCoordinator.swift */; };
+		379FBB9828D07F5E0025584E /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FBB9728D07F5E0025584E /* RedViewController.swift */; };
+		379FBB9A28D07F620025584E /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FBB9928D07F620025584E /* GreenViewController.swift */; };
+		379FBB9C28D07F6B0025584E /* BlueViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FBB9B28D07F6B0025584E /* BlueViewController copy.swift */; };
+		379FBB9E28D086F90025584E /* HorizontalSubNaviCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FBB9D28D086F90025584E /* HorizontalSubNaviCoordinator.swift */; };
+		379FBBA128D110000025584E /* Array+NextAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FBB9F28D0BBCF0025584E /* Array+NextAfter.swift */; };
 		37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */; };
 		37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */; };
 		37C6F58526F385E600387CE1 /* UILabel+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */; };
@@ -201,6 +207,12 @@
 		378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReactable.swift; sourceTree = "<group>"; };
 		378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FindFirstResponder.swift"; sourceTree = "<group>"; };
 		3793B9622893F98200AF016A /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
+		379FBB9428D07EEA0025584E /* NaviExampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviExampleCoordinator.swift; sourceTree = "<group>"; };
+		379FBB9728D07F5E0025584E /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		379FBB9928D07F620025584E /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		379FBB9B28D07F6B0025584E /* BlueViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlueViewController copy.swift"; sourceTree = "<group>"; };
+		379FBB9D28D086F90025584E /* HorizontalSubNaviCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSubNaviCoordinator.swift; sourceTree = "<group>"; };
+		379FBB9F28D0BBCF0025584E /* Array+NextAfter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+NextAfter.swift"; sourceTree = "<group>"; };
 		37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDrabable.swift; sourceTree = "<group>"; };
 		37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowDrawable.swift"; sourceTree = "<group>"; };
 		37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+ShadowDrawable.swift"; sourceTree = "<group>"; };
@@ -364,6 +376,7 @@
 			children = (
 				3739F924283688B2007CCDF9 /* Array+ElementFromEnd.swift */,
 				3739F92628368967007CCDF9 /* Array+SafeIndex.swift */,
+				379FBB9F28D0BBCF0025584E /* Array+NextAfter.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -381,6 +394,8 @@
 			children = (
 				3749840324FFC5000097D8FD /* MainCoordinator.swift */,
 				3749840524FFC50F0097D8FD /* HomeCoordinator.swift */,
+				379FBB9428D07EEA0025584E /* NaviExampleCoordinator.swift */,
+				379FBB9D28D086F90025584E /* HorizontalSubNaviCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -388,6 +403,7 @@
 		3749840824FFC56B0097D8FD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				379FBB9628D07F460025584E /* CoordinatorExamples */,
 				37C6F58826F39AEA00387CE1 /* DrawShadows */,
 				3749840924FFC5700097D8FD /* Home */,
 				3749841824FFCA8E0097D8FD /* LoadNibExample */,
@@ -500,6 +516,16 @@
 				378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */,
 			);
 			path = KeyboardReactable;
+			sourceTree = "<group>";
+		};
+		379FBB9628D07F460025584E /* CoordinatorExamples */ = {
+			isa = PBXGroup;
+			children = (
+				379FBB9928D07F620025584E /* GreenViewController.swift */,
+				379FBB9B28D07F6B0025584E /* BlueViewController copy.swift */,
+				379FBB9728D07F5E0025584E /* RedViewController.swift */,
+			);
+			path = CoordinatorExamples;
 			sourceTree = "<group>";
 		};
 		37C6F57F26F384D700387CE1 /* ShadowDrawable */ = {
@@ -964,6 +990,7 @@
 				37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */,
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
+				379FBBA128D110000025584E /* Array+NextAfter.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
 				378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */,
 				37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */,
@@ -1038,13 +1065,17 @@
 				372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */,
 				3749842A24FFCBBD0097D8FD /* PersonView.swift in Sources */,
 				3749841F24FFCAA60097D8FD /* LoadNibExampleModule.swift in Sources */,
+				379FBB9C28D07F6B0025584E /* BlueViewController copy.swift in Sources */,
+				379FBB9E28D086F90025584E /* HorizontalSubNaviCoordinator.swift in Sources */,
 				372D4ABF24FFEF0D00E97D4E /* ExampleCell2.swift in Sources */,
 				3749842424FFCAA60097D8FD /* LoadNibExampleViewModel.swift in Sources */,
 				3D9C43262274629B000A6585 /* ViewController.swift in Sources */,
 				3749840624FFC50F0097D8FD /* HomeCoordinator.swift in Sources */,
+				379FBB9528D07EEA0025584E /* NaviExampleCoordinator.swift in Sources */,
 				3749841224FFC5810097D8FD /* HomeRouter.swift in Sources */,
 				378D67082506E98D005ABE66 /* ApplyExampleViewController.swift in Sources */,
 				378D66FD250684B8005ABE66 /* ExampleStoryboardHeaderView.swift in Sources */,
+				379FBB9828D07F5E0025584E /* RedViewController.swift in Sources */,
 				37C6F59026F39AFD00387CE1 /* DrawShadowsPresenter.swift in Sources */,
 				3749841524FFC5810097D8FD /* HomeViewModel.swift in Sources */,
 				3749841324FFC5810097D8FD /* HomeViewController.swift in Sources */,
@@ -1064,6 +1095,7 @@
 				378D66FB2506837B005ABE66 /* ExampleClassHeaderView.swift in Sources */,
 				3738BA5725013C1100F99BF8 /* ExampleCell1.swift in Sources */,
 				3749842124FFCAA60097D8FD /* LoadNibExampleRouter.swift in Sources */,
+				379FBB9A28D07F620025584E /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
