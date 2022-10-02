@@ -13,7 +13,7 @@ import UIKit
  
  If there is a few similar modules, each having different navigation or view model, use separate Module class for each one.
  */
-protocol MVVMCModule {
+public protocol MVVMCModule: AnyObject {
     associatedtype ViewController: UIViewController
     associatedtype ViewModel
     associatedtype Navigation
