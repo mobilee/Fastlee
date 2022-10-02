@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3710A59D28EA30E1006686EC /* MVVMCModule.swift */; };
 		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
 		372D4A9124FFCEA100E97D4E /* Person2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372D4A8F24FFCEA100E97D4E /* Person2View.xib */; };
@@ -145,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3710A59D28EA30E1006686EC /* MVVMCModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCModule.swift; sourceTree = "<group>"; };
 		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
 		372D4A8E24FFCEA100E97D4E /* Person2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2View.swift; sourceTree = "<group>"; };
@@ -298,6 +300,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3710A59B28EA30C1006686EC /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				3710A59C28EA30C8006686EC /* MVVMC */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		3710A59C28EA30C8006686EC /* MVVMC */ = {
+			isa = PBXGroup;
+			children = (
+				3710A59D28EA30E1006686EC /* MVVMCModule.swift */,
+			);
+			path = MVVMC;
+			sourceTree = "<group>";
+		};
 		37207551286218C200A37019 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,6 +755,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3710A59B28EA30C1006686EC /* Patterns */,
 				378E36C227B67886001AFDE6 /* KeyboardReactable */,
 				3758B29127AACA5E007ECB33 /* DatePicker */,
 				375C752B2678DCCE0068A07B /* Map */,
@@ -972,6 +991,7 @@
 				37E7E22424FD7B0800FAFF0B /* UIColor+RGB.swift in Sources */,
 				37E7E23E24FE7C3600FAFF0B /* CallUtil.swift in Sources */,
 				37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */,
+				3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */,
 				37E7E22524FD7B0E00FAFF0B /* UIColor+Adjust.swift in Sources */,
 				372D4AC42500485200E97D4E /* ViewTypeInitialization.swift in Sources */,
 				37E7E22B24FD7B2D00FAFF0B /* Comparable+Clamped.swift in Sources */,
