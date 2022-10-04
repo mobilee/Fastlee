@@ -10,6 +10,7 @@
 		370FB8F928EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */; };
 		370FB8FB28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */; };
 		370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */; };
+		370FB90128EC7DFD000BAD5C /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB90028EC7DFD000BAD5C /* InsetLabel.swift */; };
 		3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3710A59D28EA30E1006686EC /* MVVMCModule.swift */; };
 		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
@@ -152,6 +153,7 @@
 		370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+FixBackgroundColorWorkaround.swift"; sourceTree = "<group>"; };
 		370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SetupTitles.swift"; sourceTree = "<group>"; };
 		370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
+		370FB90028EC7DFD000BAD5C /* InsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		3710A59D28EA30E1006686EC /* MVVMCModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCModule.swift; sourceTree = "<group>"; };
 		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
@@ -313,6 +315,14 @@
 				370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */,
 			);
 			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
+		370FB8FF28EC7DF2000BAD5C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				370FB90028EC7DFD000BAD5C /* InsetLabel.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		3710A59B28EA30C1006686EC /* Patterns */ = {
@@ -772,6 +782,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				370FB8FF28EC7DF2000BAD5C /* CustomViews */,
 				3710A59B28EA30C1006686EC /* Patterns */,
 				378E36C227B67886001AFDE6 /* KeyboardReactable */,
 				3758B29127AACA5E007ECB33 /* DatePicker */,
@@ -1055,6 +1066,7 @@
 				376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */,
 				370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */,
 				3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */,
+				370FB90128EC7DFD000BAD5C /* InsetLabel.swift in Sources */,
 				3784D9B627BF91A700A9CD5E /* AppLauncher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
