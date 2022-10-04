@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370FB8F928EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */; };
+		370FB8FB28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */; };
+		370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */; };
 		3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3710A59D28EA30E1006686EC /* MVVMCModule.swift */; };
 		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
@@ -146,6 +149,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+FixBackgroundColorWorkaround.swift"; sourceTree = "<group>"; };
+		370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SetupTitles.swift"; sourceTree = "<group>"; };
+		370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		3710A59D28EA30E1006686EC /* MVVMCModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCModule.swift; sourceTree = "<group>"; };
 		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
@@ -300,6 +306,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370FB8F728EC73D6000BAD5C /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */,
+				370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
 		3710A59B28EA30C1006686EC /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +597,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				370FB8F728EC73D6000BAD5C /* UISegmentedControl */,
 				37207551286218C200A37019 /* UIViewController */,
 				3739F9232836889E007CCDF9 /* Array */,
 				3750D4F927FDEBCD002CFD08 /* UITabBarController */,
@@ -623,6 +639,7 @@
 			children = (
 				37E7E20724FD79D400FAFF0B /* UIColor+RGB.swift */,
 				37E7E20824FD79D400FAFF0B /* UIColor+Adjust.swift */,
+				370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -995,8 +1012,10 @@
 				37E7E22524FD7B0E00FAFF0B /* UIColor+Adjust.swift in Sources */,
 				372D4AC42500485200E97D4E /* ViewTypeInitialization.swift in Sources */,
 				37E7E22B24FD7B2D00FAFF0B /* Comparable+Clamped.swift in Sources */,
+				370FB8FB28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift in Sources */,
 				37EA698C2673974D007BF8C7 /* UIBarButtonItem+Init.swift in Sources */,
 				37E7E21F24FD7A2300FAFF0B /* PresentingCoordinator.swift in Sources */,
+				370FB8F928EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift in Sources */,
 				372D4AC6250048F600E97D4E /* DesignedInStoryboard.swift in Sources */,
 				3750C9F92805742B00D4AFC3 /* Anchor.swift in Sources */,
 				37E7E24624FFAD7A00FAFF0B /* NibLoadable.swift in Sources */,
@@ -1034,6 +1053,7 @@
 				37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */,
 				37E7E22E24FD7B4200FAFF0B /* Gradient.swift in Sources */,
 				376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */,
+				370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */,
 				3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */,
 				3784D9B627BF91A700A9CD5E /* AppLauncher.swift in Sources */,
 			);
