@@ -13,8 +13,8 @@ public extension UISegmentedControl {
     // https://stackoverflow.com/a/73948039/3840884
     func fixBackgroundColorWorkaround() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            for i in 0 ... (self.numberOfSegments-1) {
-                let bg = self.subviews[i]
+            for iterator in 0 ... (self.numberOfSegments-1) {
+                let bg = self.subviews[iterator]
                 bg.isHidden = true
             }
         }

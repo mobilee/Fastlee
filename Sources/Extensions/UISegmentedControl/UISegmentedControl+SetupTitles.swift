@@ -26,7 +26,7 @@ public extension UISegmentedControl {
         
         if selectedOption < titles.count {
             selectedSegmentIndex = selectedOption
-        } else if titles.count > 0 {
+        } else if !titles.isEmpty {
             selectedSegmentIndex = 0
         }
     }
