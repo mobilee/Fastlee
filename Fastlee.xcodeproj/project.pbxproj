@@ -11,6 +11,8 @@
 		370FB8FB28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */; };
 		370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */; };
 		370FB90128EC7DFD000BAD5C /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB90028EC7DFD000BAD5C /* InsetLabel.swift */; };
+		370FB90928ED9206000BAD5C /* String+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB90828ED9206000BAD5C /* String+NSAttributedString.swift */; };
+		370FB90B28ED92B1000BAD5C /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB90A28ED92B1000BAD5C /* Typealiases.swift */; };
 		3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3710A59D28EA30E1006686EC /* MVVMCModule.swift */; };
 		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
@@ -154,6 +156,8 @@
 		370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SetupTitles.swift"; sourceTree = "<group>"; };
 		370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		370FB90028EC7DFD000BAD5C /* InsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		370FB90828ED9206000BAD5C /* String+NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+NSAttributedString.swift"; sourceTree = "<group>"; };
+		370FB90A28ED92B1000BAD5C /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		3710A59D28EA30E1006686EC /* MVVMCModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCModule.swift; sourceTree = "<group>"; };
 		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
@@ -691,6 +695,7 @@
 			isa = PBXGroup;
 			children = (
 				37E7E21324FD79D400FAFF0B /* String+URL.swift */,
+				370FB90828ED9206000BAD5C /* String+NSAttributedString.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -796,6 +801,7 @@
 				37E7E20024FD79D400FAFF0B /* Extensions */,
 				37E7E23324FDA23700FAFF0B /* Utils */,
 				3D9C42A122745900000A6585 /* Fastlee.swift */,
+				370FB90A28ED92B1000BAD5C /* Typealiases.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1012,11 +1018,13 @@
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
+				370FB90B28ED92B1000BAD5C /* Typealiases.swift in Sources */,
 				378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */,
 				37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */,
 				374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */,
 				37E7E22924FD7B2700FAFF0B /* Bundle+Info.swift in Sources */,
 				37E7E22424FD7B0800FAFF0B /* UIColor+RGB.swift in Sources */,
+				370FB90928ED9206000BAD5C /* String+NSAttributedString.swift in Sources */,
 				37E7E23E24FE7C3600FAFF0B /* CallUtil.swift in Sources */,
 				37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */,
 				3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */,
