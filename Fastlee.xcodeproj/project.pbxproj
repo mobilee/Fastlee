@@ -69,6 +69,7 @@
 		378D670A2506E996005ABE66 /* ApplyExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D67092506E996005ABE66 /* ApplyExample.storyboard */; };
 		378E36C427B678A6001AFDE6 /* KeyboardReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */; };
 		378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */; };
+		3791777C28FED2E500C116D9 /* UIAlertController+AddActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */; };
 		3793B9632893F98200AF016A /* MailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793B9622893F98200AF016A /* MailComposer.swift */; };
 		37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */; };
 		37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */; };
@@ -216,6 +217,7 @@
 		378D670C250C2196005ABE66 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReactable.swift; sourceTree = "<group>"; };
 		378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FindFirstResponder.swift"; sourceTree = "<group>"; };
+		3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+AddActions.swift"; sourceTree = "<group>"; };
 		3793B9622893F98200AF016A /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
 		37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDrabable.swift; sourceTree = "<group>"; };
 		37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowDrawable.swift"; sourceTree = "<group>"; };
@@ -559,6 +561,14 @@
 			path = KeyboardReactable;
 			sourceTree = "<group>";
 		};
+		3791777A28FED2D400C116D9 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
 		37C6F57F26F384D700387CE1 /* ShadowDrawable */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,23 +631,24 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				370FB90C28ED9774000BAD5C /* Int */,
-				370FB8F728EC73D6000BAD5C /* UISegmentedControl */,
-				37207551286218C200A37019 /* UIViewController */,
 				3739F9232836889E007CCDF9 /* Array */,
-				3750D4F927FDEBCD002CFD08 /* UITabBarController */,
-				376C147A27972C9600A9F612 /* UIResponder */,
+				37E7E20E24FD79D400FAFF0B /* Bundle */,
+				37E7E21524FD79D400FAFF0B /* CALayer */,
+				37E7E21024FD79D400FAFF0B /* Comparable */,
+				37E7E20B24FD79D400FAFF0B /* Date */,
+				370FB90C28ED9774000BAD5C /* Int */,
 				37C6F57F26F384D700387CE1 /* ShadowDrawable */,
+				37E7E21224FD79D400FAFF0B /* String */,
+				3791777A28FED2D400C116D9 /* UIAlertController */,
 				37EA698A267396E3007BF8C7 /* UIBarButtonItem */,
+				37E7E20624FD79D400FAFF0B /* UIColor */,
 				37E7E20124FD79D400FAFF0B /* UIImage */,
 				37E7E20424FD79D400FAFF0B /* UILabel */,
-				37E7E20624FD79D400FAFF0B /* UIColor */,
+				376C147A27972C9600A9F612 /* UIResponder */,
+				370FB8F728EC73D6000BAD5C /* UISegmentedControl */,
+				3750D4F927FDEBCD002CFD08 /* UITabBarController */,
 				37E7E20924FD79D400FAFF0B /* UIView */,
-				37E7E20B24FD79D400FAFF0B /* Date */,
-				37E7E20E24FD79D400FAFF0B /* Bundle */,
-				37E7E21024FD79D400FAFF0B /* Comparable */,
-				37E7E21224FD79D400FAFF0B /* String */,
-				37E7E21524FD79D400FAFF0B /* CALayer */,
+				37207551286218C200A37019 /* UIViewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1069,6 +1080,7 @@
 				375C752D2678DCE60068A07B /* Map+Center.swift in Sources */,
 				37E7E22724FD7B1C00FAFF0B /* Date+Components.swift in Sources */,
 				37E7E23724FE79A200FAFF0B /* Fonts.swift in Sources */,
+				3791777C28FED2E500C116D9 /* UIAlertController+AddActions.swift in Sources */,
 				37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */,
 				3793B9632893F98200AF016A /* MailComposer.swift in Sources */,
 				372D4A9E24FFE65D00E97D4E /* Reusable.swift in Sources */,
