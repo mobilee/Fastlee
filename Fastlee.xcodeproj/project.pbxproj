@@ -19,6 +19,7 @@
 		3712DF1A2906DE67001B4A24 /* UILabel+SetLineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712DF192906DE67001B4A24 /* UILabel+SetLineHeight.swift */; };
 		3712DF1C2906E107001B4A24 /* UILabel+SetLineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712DF1B2906E107001B4A24 /* UILabel+SetLineSpacing.swift */; };
 		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
+		3726FE382919539800CBE6ED /* String+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726FE372919539800CBE6ED /* String+Int.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
 		372D4A9124FFCEA100E97D4E /* Person2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372D4A8F24FFCEA100E97D4E /* Person2View.xib */; };
 		372D4A9924FFD75200E97D4E /* Person3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A9724FFD75200E97D4E /* Person3View.swift */; };
@@ -170,6 +171,7 @@
 		3712DF1B2906E107001B4A24 /* UILabel+SetLineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+SetLineSpacing.swift"; sourceTree = "<group>"; };
 		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
+		3726FE372919539800CBE6ED /* String+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Int.swift"; sourceTree = "<group>"; };
 		372D4A8E24FFCEA100E97D4E /* Person2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2View.swift; sourceTree = "<group>"; };
 		372D4A8F24FFCEA100E97D4E /* Person2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Person2View.xib; sourceTree = "<group>"; };
 		372D4A9724FFD75200E97D4E /* Person3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person3View.swift; sourceTree = "<group>"; };
@@ -735,6 +737,7 @@
 			children = (
 				37E7E21324FD79D400FAFF0B /* String+URL.swift */,
 				370FB90828ED9206000BAD5C /* String+NSAttributedString.swift */,
+				3726FE372919539800CBE6ED /* String+Int.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1061,6 +1064,7 @@
 				378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */,
 				37E7E21924FD7A1F00FAFF0B /* Dismissable.swift in Sources */,
 				374D728225ED3CC2003CE17E /* TabBarCoordinator.swift in Sources */,
+				3726FE382919539800CBE6ED /* String+Int.swift in Sources */,
 				37E7E22924FD7B2700FAFF0B /* Bundle+Info.swift in Sources */,
 				37E7E22424FD7B0800FAFF0B /* UIColor+RGB.swift in Sources */,
 				370FB90928ED9206000BAD5C /* String+NSAttributedString.swift in Sources */,
