@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370184D8293606420092754A /* PlistLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370184D7293606420092754A /* PlistLoader.swift */; };
 		370FB8F928EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */; };
 		370FB8FB28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */; };
 		370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */; };
@@ -158,6 +159,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		370184D7293606420092754A /* PlistLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistLoader.swift; sourceTree = "<group>"; };
 		370FB8F828EC73F6000BAD5C /* UISegmentedControl+FixBackgroundColorWorkaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+FixBackgroundColorWorkaround.swift"; sourceTree = "<group>"; };
 		370FB8FA28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+SetupTitles.swift"; sourceTree = "<group>"; };
 		370FB8FC28EC7510000BAD5C /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
@@ -762,6 +764,7 @@
 				376B45A125C0D5C100A0DF85 /* RateApp.swift */,
 				3784D9B527BF91A700A9CD5E /* AppLauncher.swift */,
 				3750C9F82805742B00D4AFC3 /* Anchor.swift */,
+				370184D7293606420092754A /* PlistLoader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1123,6 +1126,7 @@
 				370FB8FD28EC7510000BAD5C /* UIColor+Image.swift in Sources */,
 				3758B29327AACAA0007ECB33 /* DatePicker.swift in Sources */,
 				370FB90128EC7DFD000BAD5C /* InsetLabel.swift in Sources */,
+				370184D8293606420092754A /* PlistLoader.swift in Sources */,
 				3784D9B627BF91A700A9CD5E /* AppLauncher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
