@@ -45,15 +45,15 @@ extension Appliable {
      - Author: Mobilee - Łukasz Szarkowicz
      */
     @discardableResult
-    public func apply(using configuration: Applyer<Self>) -> Self {
-        return configuration.apply(to: self)
+    public func apply<T>(using configuration: Applyer<T>) -> T {
+        return configuration.apply(to: self as! T)
     }
     
     @discardableResult
-    public func apply(_ configurator: (Self) throws -> Void) rethrows -> Self {
+    public func apply<T>(_ configurator: (T) throws -> Void) rethrows -> T {
         // Run the provided configurator:
-        try configurator(self)
-        return self
+        try configurator(self as! T)
+        return self as! T
     }
 }
 
@@ -64,4 +64,6 @@ extension Appliable {
 //    }
 //}
 
-extension NSObject: Appliable {}
+extension NSObject: Appliable {
+    public typealias Element = NSObject
+}
