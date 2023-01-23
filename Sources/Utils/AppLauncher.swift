@@ -29,6 +29,7 @@ public enum AppLauncher: String {
     case trailers = "movietrailers://"
     case iTunesU = "itms-itunesu://"
     case iMovie = "fb309481925768757://"
+    case defaultMail = "mailto://"
     
     var parameters: String? { nil }
     
