@@ -35,9 +35,6 @@ public class BubbleLabel: UILabel {
     }
 
     fileprivate func setup() {
-        backgroundColor = UIColor.black
-        font = .systemFont(ofSize: 14)
-        textColor = .white
         textAlignment = .center
         anchorAspectRatio()
     }
