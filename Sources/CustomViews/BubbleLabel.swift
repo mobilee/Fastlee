@@ -16,6 +16,13 @@ public class BubbleLabel: UILabel {
     private var contentInsets: UIEdgeInsets {
         .init(top: inset, left: inset, bottom: inset, right: inset)
     }
+    
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setup()
+    }
+
 
     public override init(frame: CGRect) {
         super .init(frame: frame)
@@ -24,7 +31,7 @@ public class BubbleLabel: UILabel {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
+
     }
 
     fileprivate func setup() {
