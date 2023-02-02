@@ -74,6 +74,7 @@
 		378D670A2506E996005ABE66 /* ApplyExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D67092506E996005ABE66 /* ApplyExample.storyboard */; };
 		378E36C427B678A6001AFDE6 /* KeyboardReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */; };
 		378E36C627B679DF001AFDE6 /* UIView+FindFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */; };
+		37909937298C041300B44E14 /* BubbleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37909936298C041300B44E14 /* BubbleLabel.swift */; };
 		3791777C28FED2E500C116D9 /* UIAlertController+AddActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */; };
 		3793B9632893F98200AF016A /* MailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793B9622893F98200AF016A /* MailComposer.swift */; };
 		37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */; };
@@ -228,6 +229,7 @@
 		378D670C250C2196005ABE66 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		378E36C327B678A6001AFDE6 /* KeyboardReactable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReactable.swift; sourceTree = "<group>"; };
 		378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FindFirstResponder.swift"; sourceTree = "<group>"; };
+		37909936298C041300B44E14 /* BubbleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLabel.swift; sourceTree = "<group>"; };
 		3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+AddActions.swift"; sourceTree = "<group>"; };
 		3793B9622893F98200AF016A /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
 		37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Embedded.swift"; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				370FB90028EC7DFD000BAD5C /* InsetLabel.swift */,
+				37909936298C041300B44E14 /* BubbleLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1064,6 +1067,7 @@
 			files = (
 				37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */,
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
+				37909937298C041300B44E14 /* BubbleLabel.swift in Sources */,
 				37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
@@ -1446,7 +1450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1469,7 +1473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
