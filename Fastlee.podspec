@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = "Fastlee"
-  s.version                   = "1.0.45"
+  s.version                   = "1.0.46"
   s.summary                   = "Fastlee"
   s.homepage                  = "https://github.com/mobilee/Fastlee"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
