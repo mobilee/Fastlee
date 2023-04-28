@@ -77,6 +77,7 @@
 		37909937298C041300B44E14 /* BubbleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37909936298C041300B44E14 /* BubbleLabel.swift */; };
 		3791777C28FED2E500C116D9 /* UIAlertController+AddActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */; };
 		3793B9632893F98200AF016A /* MailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793B9622893F98200AF016A /* MailComposer.swift */; };
+		37A2407D29FC0E0700755E12 /* UIView+Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */; };
 		37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */; };
 		37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */; };
 		37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */; };
@@ -232,6 +233,7 @@
 		37909936298C041300B44E14 /* BubbleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLabel.swift; sourceTree = "<group>"; };
 		3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+AddActions.swift"; sourceTree = "<group>"; };
 		3793B9622893F98200AF016A /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
+		37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Spacer.swift"; sourceTree = "<group>"; };
 		37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Embedded.swift"; sourceTree = "<group>"; };
 		37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDrabable.swift; sourceTree = "<group>"; };
 		37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowDrawable.swift"; sourceTree = "<group>"; };
@@ -712,6 +714,7 @@
 				37E7E20A24FD79D400FAFF0B /* UIView+Add.swift */,
 				378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */,
 				37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */,
+				37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1097,6 +1100,7 @@
 				3750C9F72805735C00D4AFC3 /* CollectionCell.swift in Sources */,
 				37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */,
 				37E7E23524FDA31600FAFF0B /* Logger.swift in Sources */,
+				37A2407D29FC0E0700755E12 /* UIView+Spacer.swift in Sources */,
 				37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */,
 				37E7E22324FD7AF900FAFF0B /* UILabel+Truncated.swift in Sources */,
 				37E7E22624FD7B1600FAFF0B /* UIView+Add.swift in Sources */,
