@@ -91,6 +91,10 @@
 		37A2407D29FC0E0700755E12 /* UIView+Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */; };
 		37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */; };
 		37C585972B63D17400F59057 /* ScrollableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748AD3E2A5408F50083CC92 /* ScrollableStackView.swift */; };
+		37C5859A2B63D5CB00F59057 /* UITapGestureRecognizer+TouchPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C585992B63D5CB00F59057 /* UITapGestureRecognizer+TouchPublisher.swift */; };
+		37C5859C2B63E3FF00F59057 /* UIView+AddTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5859B2B63E3FF00F59057 /* UIView+AddTapGesture.swift */; };
+		37C5859E2B63E4CE00F59057 /* UILabel+Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5859D2B63E4CE00F59057 /* UILabel+Link.swift */; };
+		37C585A02B63E59E00F59057 /* AttributedLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5859F2B63E59E00F59057 /* AttributedLinkBuilder.swift */; };
 		37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */; };
 		37C6F58326F3854200387CE1 /* UIView+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */; };
 		37C6F58526F385E600387CE1 /* UILabel+ShadowDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */; };
@@ -259,6 +263,10 @@
 		3793B9622893F98200AF016A /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
 		37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Spacer.swift"; sourceTree = "<group>"; };
 		37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Embedded.swift"; sourceTree = "<group>"; };
+		37C585992B63D5CB00F59057 /* UITapGestureRecognizer+TouchPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+TouchPublisher.swift"; sourceTree = "<group>"; };
+		37C5859B2B63E3FF00F59057 /* UIView+AddTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddTapGesture.swift"; sourceTree = "<group>"; };
+		37C5859D2B63E4CE00F59057 /* UILabel+Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Link.swift"; sourceTree = "<group>"; };
+		37C5859F2B63E59E00F59057 /* AttributedLinkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLinkBuilder.swift; sourceTree = "<group>"; };
 		37C6F58026F384EC00387CE1 /* ShadowDrabable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDrabable.swift; sourceTree = "<group>"; };
 		37C6F58226F3854200387CE1 /* UIView+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowDrawable.swift"; sourceTree = "<group>"; };
 		37C6F58426F385E600387CE1 /* UILabel+ShadowDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+ShadowDrawable.swift"; sourceTree = "<group>"; };
@@ -455,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				372D4AA024FFE7E600E97D4E /* AssociatedObject.swift */,
+				37C5859F2B63E59E00F59057 /* AttributedLinkBuilder.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -676,6 +685,14 @@
 			path = UIAlertController;
 			sourceTree = "<group>";
 		};
+		37C585982B63D5AE00F59057 /* UITapGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				37C585992B63D5CB00F59057 /* UITapGestureRecognizer+TouchPublisher.swift */,
+			);
+			path = UITapGestureRecognizer;
+			sourceTree = "<group>";
+		};
 		37C6F57F26F384D700387CE1 /* ShadowDrawable */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,6 +755,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37C585982B63D5AE00F59057 /* UITapGestureRecognizer */,
 				370DA0932B6082DA00EF4C9A /* UIEdgeInsets */,
 				3712DF152906CA8F001B4A24 /* UIStackView */,
 				3739F9232836889E007CCDF9 /* Array */,
@@ -777,6 +795,7 @@
 				37E7E20524FD79D400FAFF0B /* UILabel+Truncated.swift */,
 				3712DF192906DE67001B4A24 /* UILabel+SetLineHeight.swift */,
 				3712DF1B2906E107001B4A24 /* UILabel+SetLineSpacing.swift */,
+				37C5859D2B63E4CE00F59057 /* UILabel+Link.swift */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -798,6 +817,7 @@
 				378E36C527B679DF001AFDE6 /* UIView+FindFirstResponder.swift */,
 				37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */,
 				37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */,
+				37C5859B2B63E3FF00F59057 /* UIView+AddTapGesture.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1156,6 +1176,7 @@
 				37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */,
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37909937298C041300B44E14 /* BubbleLabel.swift in Sources */,
+				37C5859C2B63E3FF00F59057 /* UIView+AddTapGesture.swift in Sources */,
 				37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
@@ -1170,10 +1191,12 @@
 				37E7E23E24FE7C3600FAFF0B /* CallUtil.swift in Sources */,
 				37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */,
 				3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */,
+				37C585A02B63E59E00F59057 /* AttributedLinkBuilder.swift in Sources */,
 				3748AD3B2A537A440083CC92 /* MakeConstraints+CheckHierarchy.swift in Sources */,
 				37E7E22524FD7B0E00FAFF0B /* UIColor+Adjust.swift in Sources */,
 				372D4AC42500485200E97D4E /* ViewTypeInitialization.swift in Sources */,
 				37E7E22B24FD7B2D00FAFF0B /* Comparable+Clamped.swift in Sources */,
+				37C5859E2B63E4CE00F59057 /* UILabel+Link.swift in Sources */,
 				370FB8FB28EC742F000BAD5C /* UISegmentedControl+SetupTitles.swift in Sources */,
 				37EA698C2673974D007BF8C7 /* UIBarButtonItem+Init.swift in Sources */,
 				37E7E21F24FD7A2300FAFF0B /* PresentingCoordinator.swift in Sources */,
@@ -1200,6 +1223,7 @@
 				3739F92728368967007CCDF9 /* Array+SafeIndex.swift in Sources */,
 				37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */,
 				372D4AA324FFE93B00E97D4E /* UITableView+Reusable.swift in Sources */,
+				37C5859A2B63D5CB00F59057 /* UITapGestureRecognizer+TouchPublisher.swift in Sources */,
 				37E7E21A24FD7A1F00FAFF0B /* Presentable.swift in Sources */,
 				375C752D2678DCE60068A07B /* Map+Center.swift in Sources */,
 				37E7E22724FD7B1C00FAFF0B /* Date+Components.swift in Sources */,
