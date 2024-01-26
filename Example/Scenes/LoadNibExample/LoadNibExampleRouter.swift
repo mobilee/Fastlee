@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol LoadNibExampleRouter: class {
+protocol LoadNibExampleRouter: AnyObject {
 
 }
 

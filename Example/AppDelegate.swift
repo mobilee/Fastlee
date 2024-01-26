@@ -58,9 +58,7 @@ extension AppDelegate: RateAppDelegate {
     }
     
     func rateAppShouldPresentRatePopup(_ rateApp: RateApp) -> RateApp.Trigger {
-        return RateApp.Trigger.custom { () -> Bool in
-            return true
-        }
+        return RateApp.Trigger.afterDays(days: 20)
     }
     
     func rateAppDidSelectResign(_ rateApp: RateApp) {

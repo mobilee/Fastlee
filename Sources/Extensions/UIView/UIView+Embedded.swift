@@ -18,6 +18,7 @@ public extension UIView {
      
      - Author: Mobilee - Łukasz Szarkowicz
      */
+    @discardableResult
     func embedded(in view: UIView = UIView(), with insets: UIEdgeInsets) -> UIView {
         view.addSubview(self)
         self.anchor(to: view, insets: insets)

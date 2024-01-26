@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoadNibExamplePresenterLogic: class {
+protocol LoadNibExamplePresenterLogic: AnyObject {
 	// interface for passing data from Interactor to Presenter
 
     func setView(_ view: LoadNibExampleDisplayLogic & UIViewController)

@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol DrawShadowsRouter: class {
+protocol DrawShadowsRouter: AnyObject {
 
 }
 

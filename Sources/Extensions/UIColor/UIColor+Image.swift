@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @available(iOS 10.0, *)
 public extension UIColor {
     // Create UIImage from color.

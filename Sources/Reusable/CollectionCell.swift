@@ -47,7 +47,6 @@ public final class CollectionCell<EmbedView>: UICollectionViewCell where EmbedVi
         embedView.safeAreaInsetsDidChange()
     }
     
-    
     public override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         let targetSize = CGSize(width: layoutAttributes.frame.width, height: 0)
         layoutAttributes.frame.size = contentView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)

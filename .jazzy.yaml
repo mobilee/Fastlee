@@ -1,6 +1,6 @@
 # Fastlee document generator jazzy settings
 
-copyright: Copyright 2020 Mobilee
+copyright: Copyright 2024 Mobilee
 author: Łukasz Szarkowicz
 xcodebuild_arguments: [-target, Fastlee]
 clean: true

@@ -45,8 +45,29 @@ extension HomeCoordinator: HomeRouter {
             present(view, animated: true, completion: nil)
         }
     }
+    
+    func openMakeConstraintsExample(from viewController: UIViewController) {
+        let scene = MakeConstraintsExample()
+        push(scene, animated: true)
+    }
+    
+    func openStackViewExample(from viewController: UIViewController) {
+        let scene = StackViewExampleViewController()
+        push(scene, animated: true)
+    }
+    
+    func openCombineExample(from viewController: UIViewController) {
+        if #available(iOS 13, *) {
+            let scene = CombineExampleModule(navigation: self).build()
+            push(scene, animated: true)
+        }
+    }
 }
 
 extension HomeCoordinator: LoadNibExampleRouter {}
 
 extension HomeCoordinator: DrawShadowsRouter {}
+
+extension HomeCoordinator: CombineExampleNavigation {
+    
+}

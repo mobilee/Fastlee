@@ -9,7 +9,7 @@
 import UIKit
 import Fastlee
 
-protocol HomePresenterLogic: class, UITableViewDelegate & UITableViewDataSource {
+protocol HomePresenterLogic: AnyObject, UITableViewDelegate & UITableViewDataSource {
 	// interface for passing data from Interactor to Presenter
 
     func setView(_ view: HomeDisplayLogic & UIViewController)
@@ -79,6 +79,12 @@ extension HomePresenter: UITableViewDataSource, UITableViewDelegate {
             router?.openDatePicker(from: view!)
         case .openMailApp:
             AppLauncher.mail.open()
+        case .makeConstraintsExample:
+            router?.openMakeConstraintsExample(from: view!)
+        case .stackViewExample:
+            router?.openStackViewExample(from: view!)
+        case .combineExamples:
+            router?.openCombineExample(from: view!)
         default:
             return
         }

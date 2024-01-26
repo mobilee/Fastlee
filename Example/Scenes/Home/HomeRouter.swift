@@ -9,10 +9,13 @@
 import UIKit
 
 
-protocol HomeRouter: class {
+protocol HomeRouter: AnyObject {
     func openNibLoadExample(from viewController: UIViewController)
     func openReusableCellsExample(from viewController: UIViewController)
     func openDrawShadows(from viewController: UIViewController)
     func openDatePicker(from viewController: UIViewController)
+    func openMakeConstraintsExample(from viewController: UIViewController)
+    func openStackViewExample(from viewController: UIViewController)
+    func openCombineExample(from viewController: UIViewController)
 }
 

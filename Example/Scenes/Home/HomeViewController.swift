@@ -9,7 +9,7 @@
 import UIKit
 import Fastlee
 
-protocol HomeDisplayLogic: class {
+protocol HomeDisplayLogic: AnyObject {
 	func setPresenter(_ presenter: HomePresenterLogic)
 	func didUpdateHome(_ viewModel: HomeViewModel)
 	// interface for displaying results by presenter

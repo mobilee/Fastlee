@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoadNibExampleDisplayLogic: class {
+protocol LoadNibExampleDisplayLogic: AnyObject {
 	func setPresenter(_ presenter: LoadNibExamplePresenterLogic)
 	func didUpdateLoadNibExample(_ viewModel: LoadNibExampleViewModel)
 	// interface for displaying results by presenter

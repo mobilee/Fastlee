@@ -38,6 +38,16 @@ public extension UIStackView {
         }
     }
     
+    @discardableResult
+    func insertArrangedSubview(_ view: UIView, after arrangedSubview: UIView) -> Bool {
+        guard let index = arrangedSubviews.firstIndex(of: arrangedSubview) else {
+            logError(message: "Could not find view in Stack View's arranged subviews.")
+            return false
+        }
+        insertArrangedSubview(view, at: index)
+        return true
+    }
+    
     /**
      Convenient method to add spacer after given arranged subview.
      
@@ -45,11 +55,7 @@ public extension UIStackView {
      */
     func addSpacer(after arrangedSubview: UIView? = nil) {
         if let arr = arrangedSubview {
-            guard let index = arrangedSubviews.firstIndex(of: arr) else {
-                logError(message: "Can't add spacer after \(arr) cause it doesn't exist in Stack View")
-                return
-            }
-            insertArrangedSubview(UIView.spacer(), at: index)
+            insertArrangedSubview(UIView.spacer(), after: arr)
         } else {
             addArrangedSubview(UIView.spacer())
         }
