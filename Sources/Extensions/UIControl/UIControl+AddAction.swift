@@ -9,7 +9,8 @@
 import UIKit
 
 @available(iOS 14.0, *)
-extension UIControl {
+public extension UIControl {
+   
     @MainActor
     func addAction(for controlEvents: UIControl.Event = .touchUpInside,
                    actionHandler: @escaping (UIAction) -> Void) {
