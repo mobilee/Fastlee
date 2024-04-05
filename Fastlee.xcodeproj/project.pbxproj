@@ -106,6 +106,7 @@
 		37C6F59326F39AFD00387CE1 /* DrawShadowsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58D26F39AFD00387CE1 /* DrawShadowsInteractor.swift */; };
 		37C6F59426F39AFD00387CE1 /* DrawShadowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F58E26F39AFD00387CE1 /* DrawShadowsViewModel.swift */; };
 		37C6F59626F39B5000387CE1 /* DrawShadows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C6F59526F39B5000387CE1 /* DrawShadows.storyboard */; };
+		37CAFB352BC04D6800AD0AE8 /* UIControl+AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAFB342BC04D6800AD0AE8 /* UIControl+AddAction.swift */; };
 		37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */; };
 		37E7E21724FD79FA00FAFF0B /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E20224FD79D400FAFF0B /* UIImage+Resize.swift */; };
 		37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */; };
@@ -278,6 +279,7 @@
 		37C6F58D26F39AFD00387CE1 /* DrawShadowsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsInteractor.swift; sourceTree = "<group>"; };
 		37C6F58E26F39AFD00387CE1 /* DrawShadowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShadowsViewModel.swift; sourceTree = "<group>"; };
 		37C6F59526F39B5000387CE1 /* DrawShadows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawShadows.storyboard; sourceTree = "<group>"; };
+		37CAFB342BC04D6800AD0AE8 /* UIControl+AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+AddAction.swift"; sourceTree = "<group>"; };
 		37D5F24925DF2D450007956E /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		37E7E1EF24FD777C00FAFF0B /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		37E7E1F224FD77F500FAFF0B /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
@@ -718,6 +720,14 @@
 			path = DrawShadows;
 			sourceTree = "<group>";
 		};
+		37CAFB332BC04D5700AD0AE8 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				37CAFB342BC04D6800AD0AE8 /* UIControl+AddAction.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
 		37E7E1F124FD77ED00FAFF0B /* Loadable */ = {
 			isa = PBXGroup;
 			children = (
@@ -755,6 +765,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37CAFB332BC04D5700AD0AE8 /* UIControl */,
 				37C585982B63D5AE00F59057 /* UITapGestureRecognizer */,
 				370DA0932B6082DA00EF4C9A /* UIEdgeInsets */,
 				3712DF152906CA8F001B4A24 /* UIStackView */,
@@ -1232,6 +1243,7 @@
 				3791777C28FED2E500C116D9 /* UIAlertController+AddActions.swift in Sources */,
 				37E7E21D24FD7A2300FAFF0B /* AppCoordinator.swift in Sources */,
 				3793B9632893F98200AF016A /* MailComposer.swift in Sources */,
+				37CAFB352BC04D6800AD0AE8 /* UIControl+AddAction.swift in Sources */,
 				372D4A9E24FFE65D00E97D4E /* Reusable.swift in Sources */,
 				3750D4FB27FDEBEA002CFD08 /* UITabBarController+Select.swift in Sources */,
 				370FB90E28ED9794000BAD5C /* Int+String.swift in Sources */,
