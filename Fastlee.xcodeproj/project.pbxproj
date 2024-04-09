@@ -136,6 +136,7 @@
 		37E7E24224FEA61700FAFF0B /* DefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E24124FEA61700FAFF0B /* DefaultsTests.swift */; };
 		37E7E24624FFAD7A00FAFF0B /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7E24524FFAD7A00FAFF0B /* NibLoadable.swift */; };
 		37EA698C2673974D007BF8C7 /* UIBarButtonItem+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA698B2673974D007BF8C7 /* UIBarButtonItem+Init.swift */; };
+		37F46CA72BC5975200B8E494 /* UIStackView+DesignatedInits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F46CA62BC5975200B8E494 /* UIStackView+DesignatedInits.swift */; };
 		3D9C42A222745900000A6585 /* Fastlee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* Fastlee.swift */; };
 		3D9C42F62274604A000A6585 /* Fastlee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Fastlee.framework */; };
 		3D9C42FC22746078000A6585 /* FastleeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* FastleeTests.swift */; };
@@ -311,6 +312,7 @@
 		37E7E24124FEA61700FAFF0B /* DefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsTests.swift; sourceTree = "<group>"; };
 		37E7E24524FFAD7A00FAFF0B /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		37EA698B2673974D007BF8C7 /* UIBarButtonItem+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Init.swift"; sourceTree = "<group>"; };
+		37F46CA62BC5975200B8E494 /* UIStackView+DesignatedInits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+DesignatedInits.swift"; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* Fastlee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fastlee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* Fastlee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fastlee.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* FastleeTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FastleeTests.plist; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				3712DF162906CAA7001B4A24 /* UIStackView+ClearAllSubviews.swift */,
+				37F46CA62BC5975200B8E494 /* UIStackView+DesignatedInits.swift */,
 			);
 			path = UIStackView;
 			sourceTree = "<group>";
@@ -1200,6 +1203,7 @@
 				37E7E22424FD7B0800FAFF0B /* UIColor+RGB.swift in Sources */,
 				370FB90928ED9206000BAD5C /* String+NSAttributedString.swift in Sources */,
 				37E7E23E24FE7C3600FAFF0B /* CallUtil.swift in Sources */,
+				37F46CA72BC5975200B8E494 /* UIStackView+DesignatedInits.swift in Sources */,
 				37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */,
 				3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */,
 				37C585A02B63E59E00F59057 /* AttributedLinkBuilder.swift in Sources */,

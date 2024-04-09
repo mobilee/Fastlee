@@ -26,9 +26,9 @@ public extension UIView {
         
         return [
             topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top),
-            leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: insets.left),
+            leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: insets.left),
             bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom),
-            rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -insets.right)
+            trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -insets.right)
         ]
     }
     

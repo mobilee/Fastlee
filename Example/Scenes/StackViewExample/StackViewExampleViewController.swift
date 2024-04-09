@@ -19,7 +19,7 @@ class StackViewExampleViewController: UIViewController {
         view.backgroundColor = .white
         
         view.add(stackView)
-        stackView.constraintsEqual(to: view).activateAll()
+        stackView.constraintsEqual(to: view.safeAreaLayoutGuide).activateAll()
         
         stackView.backgroundColor = .green
         stackView.stackView.backgroundColor = .blue

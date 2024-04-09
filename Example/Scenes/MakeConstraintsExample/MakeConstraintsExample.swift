@@ -24,7 +24,7 @@ class MakeConstraintsExample: UIViewController {
         blueView.backgroundColor = .blue
         greenView.backgroundColor = .green
         
-        makeConstraints7()
+        makeConstraints4()
     }
     
     func makeConstraints1() {
