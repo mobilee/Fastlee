@@ -17,7 +17,7 @@ public protocol SceneBindable: UIViewController, BindingConfigurable {
 
 // MARK: - Scene
 @available(iOS 14.0, *)
-public class Scene<T>: UIViewController, SceneBindable {
+open class Scene<T>: UIViewController, SceneBindable {
     public var bindingsBag = Set<AnyCancellable>()
     
     public var viewModel: T! {
@@ -34,4 +34,3 @@ public class Scene<T>: UIViewController, SceneBindable {
     public func update(with viewModel: T) {
     }
 }
-
