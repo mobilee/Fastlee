@@ -27,10 +27,10 @@ open class Scene<T>: UIViewController, SceneBindable {
         }
     }
     
-    public func setupBindings(with viewModel: T) {
+    open func setupBindings(with viewModel: T) {
         bindingsBag.removeAll()
     }
     
-    public func update(with viewModel: T) {
+    open func update(with viewModel: T) {
     }
 }
