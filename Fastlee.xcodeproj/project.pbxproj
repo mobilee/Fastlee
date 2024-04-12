@@ -88,6 +88,13 @@
 		37909937298C041300B44E14 /* BubbleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37909936298C041300B44E14 /* BubbleLabel.swift */; };
 		3791777C28FED2E500C116D9 /* UIAlertController+AddActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */; };
 		3793B9632893F98200AF016A /* MailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793B9622893F98200AF016A /* MailComposer.swift */; };
+		379BB4BF2BC9911C0071F3CC /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4BE2BC9911C0071F3CC /* Observer.swift */; };
+		379BB4C12BC991240071F3CC /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4C02BC991240071F3CC /* Bindable.swift */; };
+		379BB4C32BC991690071F3CC /* ComponentUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4C22BC991690071F3CC /* ComponentUI.swift */; };
+		379BB4C52BC992AB0071F3CC /* BindingConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4C42BC992AB0071F3CC /* BindingConfigurable.swift */; };
+		379BB4C72BC993060071F3CC /* SceneBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4C62BC993060071F3CC /* SceneBindable.swift */; };
+		379BB4CA2BC993A80071F3CC /* UITextField+Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4C92BC993A80071F3CC /* UITextField+Bindable.swift */; };
+		379BB4CC2BC9964B0071F3CC /* UILabel+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BB4CB2BC9964B0071F3CC /* UILabel+Observer.swift */; };
 		37A2407D29FC0E0700755E12 /* UIView+Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */; };
 		37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */; };
 		37C585972B63D17400F59057 /* ScrollableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748AD3E2A5408F50083CC92 /* ScrollableStackView.swift */; };
@@ -263,6 +270,13 @@
 		37909936298C041300B44E14 /* BubbleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLabel.swift; sourceTree = "<group>"; };
 		3791777B28FED2E500C116D9 /* UIAlertController+AddActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+AddActions.swift"; sourceTree = "<group>"; };
 		3793B9622893F98200AF016A /* MailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposer.swift; sourceTree = "<group>"; };
+		379BB4BE2BC9911C0071F3CC /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		379BB4C02BC991240071F3CC /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		379BB4C22BC991690071F3CC /* ComponentUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentUI.swift; sourceTree = "<group>"; };
+		379BB4C42BC992AB0071F3CC /* BindingConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingConfigurable.swift; sourceTree = "<group>"; };
+		379BB4C62BC993060071F3CC /* SceneBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBindable.swift; sourceTree = "<group>"; };
+		379BB4C92BC993A80071F3CC /* UITextField+Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Bindable.swift"; sourceTree = "<group>"; };
+		379BB4CB2BC9964B0071F3CC /* UILabel+Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Observer.swift"; sourceTree = "<group>"; };
 		37A2407C29FC0E0700755E12 /* UIView+Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Spacer.swift"; sourceTree = "<group>"; };
 		37A2E8C1294D27020041F4F3 /* UIView+Embedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Embedded.swift"; sourceTree = "<group>"; };
 		37C585992B63D5CB00F59057 /* UITapGestureRecognizer+TouchPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+TouchPublisher.swift"; sourceTree = "<group>"; };
@@ -690,6 +704,28 @@
 			path = UIAlertController;
 			sourceTree = "<group>";
 		};
+		379BB4BD2BC990F30071F3CC /* Bindable */ = {
+			isa = PBXGroup;
+			children = (
+				379BB4C22BC991690071F3CC /* ComponentUI.swift */,
+				379BB4BE2BC9911C0071F3CC /* Observer.swift */,
+				379BB4C02BC991240071F3CC /* Bindable.swift */,
+				379BB4C42BC992AB0071F3CC /* BindingConfigurable.swift */,
+				379BB4C62BC993060071F3CC /* SceneBindable.swift */,
+				379BB4C82BC993940071F3CC /* UI Components */,
+			);
+			path = Bindable;
+			sourceTree = "<group>";
+		};
+		379BB4C82BC993940071F3CC /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				379BB4CB2BC9964B0071F3CC /* UILabel+Observer.swift */,
+				379BB4C92BC993A80071F3CC /* UITextField+Bindable.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
 		37C585982B63D5AE00F59057 /* UITapGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
@@ -959,6 +995,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				379BB4BD2BC990F30071F3CC /* Bindable */,
 				370FB8FF28EC7DF2000BAD5C /* Views */,
 				3710A59B28EA30C1006686EC /* Patterns */,
 				378E36C227B67886001AFDE6 /* KeyboardReactable */,
@@ -1186,11 +1223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379BB4CA2BC993A80071F3CC /* UITextField+Bindable.swift in Sources */,
 				37C585972B63D17400F59057 /* ScrollableStackView.swift in Sources */,
 				37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */,
 				37C6F58726F3860C00387CE1 /* UICollectionViewCell+ShadowDrawable.swift in Sources */,
 				37909937298C041300B44E14 /* BubbleLabel.swift in Sources */,
 				37C5859C2B63E3FF00F59057 /* UIView+AddTapGesture.swift in Sources */,
+				379BB4C32BC991690071F3CC /* ComponentUI.swift in Sources */,
 				37A2E8C2294D27020041F4F3 /* UIView+Embedded.swift in Sources */,
 				37E7E24024FE84F600FAFF0B /* Defaults.swift in Sources */,
 				376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */,
@@ -1207,6 +1246,7 @@
 				37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */,
 				3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */,
 				37C585A02B63E59E00F59057 /* AttributedLinkBuilder.swift in Sources */,
+				379BB4C52BC992AB0071F3CC /* BindingConfigurable.swift in Sources */,
 				3748AD3B2A537A440083CC92 /* MakeConstraints+CheckHierarchy.swift in Sources */,
 				37E7E22524FD7B0E00FAFF0B /* UIColor+Adjust.swift in Sources */,
 				372D4AC42500485200E97D4E /* ViewTypeInitialization.swift in Sources */,
@@ -1222,8 +1262,10 @@
 				3D9C42A222745900000A6585 /* Fastlee.swift in Sources */,
 				37E7E21824FD7A1700FAFF0B /* StoryboardLoadable.swift in Sources */,
 				3750C9F72805735C00D4AFC3 /* CollectionCell.swift in Sources */,
+				379BB4C72BC993060071F3CC /* SceneBindable.swift in Sources */,
 				37D5F24A25DF2D450007956E /* UICollectionView+Reusable.swift in Sources */,
 				37E7E23524FDA31600FAFF0B /* Logger.swift in Sources */,
+				379BB4BF2BC9911C0071F3CC /* Observer.swift in Sources */,
 				37A2407D29FC0E0700755E12 /* UIView+Spacer.swift in Sources */,
 				37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */,
 				37E7E22324FD7AF900FAFF0B /* UILabel+Truncated.swift in Sources */,
@@ -1231,10 +1273,12 @@
 				378D67032506E877005ABE66 /* Applyer.swift in Sources */,
 				37E7E22224FD7AAE00FAFF0B /* UIImage+Tinted.swift in Sources */,
 				3712DF1A2906DE67001B4A24 /* UILabel+SetLineHeight.swift in Sources */,
+				379BB4CC2BC9964B0071F3CC /* UILabel+Observer.swift in Sources */,
 				3712DF172906CAA7001B4A24 /* UIStackView+ClearAllSubviews.swift in Sources */,
 				372D4A9C24FFE01100E97D4E /* HasNib.swift in Sources */,
 				37E7E23C24FE7C0F00FAFF0B /* Delay.swift in Sources */,
 				372D4AA124FFE7EB00E97D4E /* AssociatedObject.swift in Sources */,
+				379BB4C12BC991240071F3CC /* Bindable.swift in Sources */,
 				3739F92728368967007CCDF9 /* Array+SafeIndex.swift in Sources */,
 				37C6F58126F384EC00387CE1 /* ShadowDrabable.swift in Sources */,
 				372D4AA324FFE93B00E97D4E /* UITableView+Reusable.swift in Sources */,
