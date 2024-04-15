@@ -74,6 +74,7 @@
 		375C752D2678DCE60068A07B /* Map+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C752C2678DCE60068A07B /* Map+Center.swift */; };
 		376B45A225C0D5C100A0DF85 /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B45A125C0D5C100A0DF85 /* RateApp.swift */; };
 		376C147C27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C147B27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift */; };
+		376C5F642BCD8A690067FAFF /* Locale+AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C5F632BCD8A690067FAFF /* Locale+AppLanguage.swift */; };
 		3784D9B627BF91A700A9CD5E /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3784D9B527BF91A700A9CD5E /* AppLauncher.swift */; };
 		378D66F62503BC55005ABE66 /* ExampleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */; };
 		378D66F82503BD1A005ABE66 /* ExampleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */; };
@@ -255,6 +256,7 @@
 		375C752C2678DCE60068A07B /* Map+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Center.swift"; sourceTree = "<group>"; };
 		376B45A125C0D5C100A0DF85 /* RateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		376C147B27972CBB00A9F612 /* UIResponder+ResignFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+ResignFirstResponder.swift"; sourceTree = "<group>"; };
+		376C5F632BCD8A690067FAFF /* Locale+AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+AppLanguage.swift"; sourceTree = "<group>"; };
 		3784D9B527BF91A700A9CD5E /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
 		378D66F52503BC55005ABE66 /* ExampleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleHeaderView.xib; sourceTree = "<group>"; };
 		378D66F72503BD1A005ABE66 /* ExampleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHeaderView.swift; sourceTree = "<group>"; };
@@ -663,6 +665,14 @@
 			path = UIResponder;
 			sourceTree = "<group>";
 		};
+		376C5F622BCD8A5D0067FAFF /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				376C5F632BCD8A690067FAFF /* Locale+AppLanguage.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
 		378D66FE25069DC6005ABE66 /* Apply */ = {
 			isa = PBXGroup;
 			children = (
@@ -804,6 +814,7 @@
 		37E7E20024FD79D400FAFF0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				376C5F622BCD8A5D0067FAFF /* Locale */,
 				37CAFB332BC04D5700AD0AE8 /* UIControl */,
 				37C585982B63D5AE00F59057 /* UITapGestureRecognizer */,
 				370DA0932B6082DA00EF4C9A /* UIEdgeInsets */,
@@ -1242,6 +1253,7 @@
 				37E7E22424FD7B0800FAFF0B /* UIColor+RGB.swift in Sources */,
 				370FB90928ED9206000BAD5C /* String+NSAttributedString.swift in Sources */,
 				37E7E23E24FE7C3600FAFF0B /* CallUtil.swift in Sources */,
+				376C5F642BCD8A690067FAFF /* Locale+AppLanguage.swift in Sources */,
 				37F46CA72BC5975200B8E494 /* UIStackView+DesignatedInits.swift in Sources */,
 				37E7E22C24FD7B3500FAFF0B /* String+URL.swift in Sources */,
 				3710A59E28EA30E1006686EC /* MVVMCModule.swift in Sources */,
