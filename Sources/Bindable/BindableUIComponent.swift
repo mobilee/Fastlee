@@ -10,8 +10,8 @@ import Foundation
 import Combine
 
 @available(iOS 14.0, *)
-public protocol BindingConfigurable: ComponentUI {
+public protocol BindableUIComponent {
+    associatedtype ViewModel
     var bindingsBag: Set<AnyCancellable> { get set }
-    
-    func setupBindings(with viewModel: ViewModel)
+    func bind(to viewModel: ViewModel)
 }

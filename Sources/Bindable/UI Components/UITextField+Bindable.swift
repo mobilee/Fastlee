@@ -10,7 +10,8 @@ import UIKit
 import Combine
 
 @available(iOS 13.0, *)
-extension UITextField: Bindable {
+extension UITextField: AtomicUIComponent {
+    
     public func update(with viewModel: String?) {
         self.text = viewModel
     }

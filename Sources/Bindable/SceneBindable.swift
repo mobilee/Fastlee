@@ -11,7 +11,7 @@ import Combine
 
 // MARK: - SceneBindable Protocol
 @available(iOS 14.0, *)
-public protocol SceneBindable: UIViewController, BindingConfigurable {
+public protocol SceneBindable: UIViewController, BindableUIComponent {
     var viewModel: ViewModel! { get set }
 }
 
@@ -23,11 +23,11 @@ open class Scene<T>: UIViewController, SceneBindable {
     public var viewModel: T! {
         didSet {
             update(with: viewModel)
-            setupBindings(with: viewModel)
+            bind(to: viewModel)
         }
     }
     
-    open func setupBindings(with viewModel: T) {
+    open func bind(to viewModel: T) {
         bindingsBag.removeAll()
     }
     

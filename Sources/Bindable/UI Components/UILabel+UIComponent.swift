@@ -1,5 +1,5 @@
 //
-//  UILabel+Observer.swift
+//  UILabel+UIComponent.swift
 //  Fastlee
 //
 //  Created by Łukasz Szarkowicz on 12/04/2024.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-extension UILabel: Observer {
+extension UILabel: UIComponent {
+    
     public func update(with viewModel: String?) {
         text = viewModel
     }
