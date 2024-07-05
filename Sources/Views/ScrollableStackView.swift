@@ -82,8 +82,9 @@ public class ScrollableStackView: UIView {
 //        constr += scrollView.constraints(width: widthAnchor, height: heightAnchor)
         
         // Stack View Constraints
-        constr += stackView.constraintsEqual(to: scrollView.safeAreaLayoutGuide)
-//        constr += stackView.constraints(width: widthAnchor)
+        /// Important to not create below constraints to scrollView.safeAreaLayoutGuide, because it leads to constraints error.
+        constr += stackView.constraintsEqual(to: scrollView)
+        constr += stackView.constraintsTo(width: widthAnchor)
         
         let heightConstraint = stackView.heightAnchor.constraint(equalTo: heightAnchor)
         heightConstraint.priority = .init(250)
