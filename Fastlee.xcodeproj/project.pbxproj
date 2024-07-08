@@ -27,6 +27,7 @@
 		3712DF1C2906E107001B4A24 /* UILabel+SetLineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3712DF1B2906E107001B4A24 /* UILabel+SetLineSpacing.swift */; };
 		37207553286218E100A37019 /* UIViewController+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37207552286218E100A37019 /* UIViewController+UINavigationController.swift */; };
 		3726FE382919539800CBE6ED /* String+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726FE372919539800CBE6ED /* String+Int.swift */; };
+		372B327A2C3C2BCC000F4D27 /* UIImage+Compressed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372B32792C3C2BCC000F4D27 /* UIImage+Compressed.swift */; };
 		372D4A9024FFCEA100E97D4E /* Person2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A8E24FFCEA100E97D4E /* Person2View.swift */; };
 		372D4A9124FFCEA100E97D4E /* Person2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372D4A8F24FFCEA100E97D4E /* Person2View.xib */; };
 		372D4A9924FFD75200E97D4E /* Person3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D4A9724FFD75200E97D4E /* Person3View.swift */; };
@@ -209,6 +210,7 @@
 		37207552286218E100A37019 /* UIViewController+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UINavigationController.swift"; sourceTree = "<group>"; };
 		37251AE127AADEAE0096C143 /* calendar_example.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_example.PNG; sourceTree = "<group>"; };
 		3726FE372919539800CBE6ED /* String+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Int.swift"; sourceTree = "<group>"; };
+		372B32792C3C2BCC000F4D27 /* UIImage+Compressed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Compressed.swift"; sourceTree = "<group>"; };
 		372D4A8E24FFCEA100E97D4E /* Person2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2View.swift; sourceTree = "<group>"; };
 		372D4A8F24FFCEA100E97D4E /* Person2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Person2View.xib; sourceTree = "<group>"; };
 		372D4A9724FFD75200E97D4E /* Person3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person3View.swift; sourceTree = "<group>"; };
@@ -846,6 +848,7 @@
 			children = (
 				37E7E20224FD79D400FAFF0B /* UIImage+Resize.swift */,
 				37E7E20324FD79D400FAFF0B /* UIImage+Tinted.swift */,
+				372B32792C3C2BCC000F4D27 /* UIImage+Compressed.swift */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1281,6 +1284,7 @@
 				37A2407D29FC0E0700755E12 /* UIView+Spacer.swift in Sources */,
 				37E7E22024FD7A2300FAFF0B /* NavigationCoordinator.swift in Sources */,
 				37E7E22324FD7AF900FAFF0B /* UILabel+Truncated.swift in Sources */,
+				372B327A2C3C2BCC000F4D27 /* UIImage+Compressed.swift in Sources */,
 				37E7E22624FD7B1600FAFF0B /* UIView+Add.swift in Sources */,
 				378D67032506E877005ABE66 /* Applyer.swift in Sources */,
 				37E7E22224FD7AAE00FAFF0B /* UIImage+Tinted.swift in Sources */,
