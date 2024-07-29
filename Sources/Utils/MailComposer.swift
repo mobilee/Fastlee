@@ -19,12 +19,17 @@ final public class MailComposer {
     
     /// Email address of recipient
     private(set) var recipient: String
+    private(set) var subject: String?
+    private(set) var body: String?
     
     /**
      URL created for the email composer.
      */
     public var composeUrl: URL? {
-        return URL(string: "mailto://\(self.recipient)")
+        let encodedSubject = subject?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        let encodedBody = body?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        
+        return URL(string: "mailto:\(recipient)?subject=\(encodedSubject)&body=\(encodedBody)")
     }
     
     /**
@@ -38,8 +43,10 @@ final public class MailComposer {
         return UIApplication.shared.canOpenURL(url)
     }
     
-    public init(recipientEmail: String) {
+    public init(recipientEmail: String, subject: String? = nil, body: String? = nil) {
         self.recipient = recipientEmail
+        self.subject = subject
+        self.body = body
     }
     
     /**
