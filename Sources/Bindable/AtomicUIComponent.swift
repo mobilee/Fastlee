@@ -15,7 +15,7 @@ public protocol AtomicUIComponent: UIComponent {
     var bindablePublisher: AnyPublisher<ViewModel, Never> { get }
     
     func bind(to publishedValue: inout Published<ViewModel>.Publisher, storeIn bag: inout Set<AnyCancellable>)
-    func bind(to subject: CurrentValueSubject<String?, Never>, storeIn bag: inout Set<AnyCancellable>)
+    func bind(to subject: CurrentValueSubject<ViewModel, Never>, storeIn bag: inout Set<AnyCancellable>)
 }
 
 @available(iOS 14.0, *)
